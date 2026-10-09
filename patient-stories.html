@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Stories & Video Testimonials — Wellness Pro | Official Brand Theme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Open+Sans+Hebrew+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --e-global-color-primary: #6EC1E4;
+      --e-global-color-secondary: #54595F;
+      --e-global-color-accent: #61CE70;
+      --e-global-color-coral: #FE6347;
+      --e-global-color-amber: #FEB518;
+      --e-global-color-yellow: #F0DA69;
+      --e-global-color-navy-dark: #20265B;
+      --e-global-color-navy-royal: #0F256C;
+      --e-global-color-topbar-bg: #F1F5FF;
+      --e-global-color-soft-bg: #F5F8FF;
+    }
+    body { font-family: 'Open Sans', sans-serif; color: #54595F; background-color: #FFFFFF; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; color: #20265B; }
+    .btn-pill { border-radius: 100px; }
+    .active-nav-link { color: #FE6347 !important; border-bottom: 2.5px solid #FE6347; }
+    .img-zoom { transition: transform 0.5s ease; }
+    .group:hover .img-zoom { transform: scale(1.06); }
+  </style>
+</head>
+<body class="bg-white min-h-screen antialiased flex flex-col justify-between">
+
+  <!-- ================= TOPBAR ================= -->
+  <header class="w-full">
+    <div class="bg-[#F1F5FF] text-[#272424] text-xs py-2 border-b border-indigo-100/60">
+      <div class="w-[90%] max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-2 font-medium">
+          <span>We understand that each patient is unique</span>
+          <a href="https://wellnesspro.in/about-us/" target="_blank" class="text-[#0F256C] font-semibold hover:text-[#FE6347] transition ml-2 flex items-center gap-1">
+            <span>Learn More</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+        <div class="flex items-center gap-6 font-semibold">
+          <a href="tel:9820647062" class="text-[#0F256C] hover:text-[#FE6347] transition flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-[#0F256C]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+            <span>+91 982 064 7062</span>
+          </a>
+          <span class="text-[#0F256C]">info@wellnesspro.in</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <div class="bg-white border-b border-slate-200">
+      <div class="w-[90%] max-w-[1600px] mx-auto py-3.5 flex items-center justify-between gap-6">
+        <a href="index.html" class="flex items-center shrink-0 mr-4 xl:mr-8">
+          <img src="https://wellnesspro.in/wp-content/uploads/2025/06/WELLNESS-PRO-Logo-HD-1.png" alt="Wellness Pro Logo" class="h-11 sm:h-12 w-auto object-contain" />
+        </a>
+
+        <nav class="flex items-center gap-6 sm:gap-10 text-[15px] sm:text-[16px] font-bold whitespace-nowrap">
+          <a href="technology.html" class="text-[#0F256C] hover:text-[#FE6347] font-bold transition py-1">Our Technology</a>
+          <a href="openings.html" class="text-[#0F256C] hover:text-[#FE6347] font-bold transition py-1">Center Openings</a>
+          <a href="patient-stories.html" class="active-nav-link text-[#FE6347] font-bold pb-1">Patient Stories</a>
+        </nav>
+
+        <a href="#consultation" class="bg-[#20265B] hover:bg-[#0F256C] text-white text-xs sm:text-sm font-semibold px-6 py-2.5 btn-pill shadow-sm transition flex items-center gap-2 whitespace-nowrap">
+          <span>Book Consultation</span>
+          <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT (90% WIDTH) ================= -->
+  <main class="w-[90%] max-w-[1600px] mx-auto py-8 space-y-16 flex-1">
+    
+    <!-- 2-Column Hero Section -->
+    <div class="bg-gradient-to-br from-[#F5F8FF] via-white to-[#F1F5FF] rounded-3xl p-8 lg:p-14 border border-indigo-100/80 relative overflow-hidden shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-white text-[#FE6347] text-xs font-bold px-4 py-1.5 btn-pill border border-[#FE6347]/30 shadow-sm">
+            <span>⭐</span> Over 10,000+ Happy Patients & Verified Reviews
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight text-[#20265B]">
+            Real People. Real Pain Relief. Real Stories.
+          </h1>
+          <p class="text-[#54595F] text-base sm:text-lg leading-relaxed">
+            Watch authentic video reviews from patients who eliminated plantar fasciitis, arch fatigue, knee pain, and post-surgery discomfort with Wellness Pro custom orthotics.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#consultation" class="bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-sm px-7 py-3.5 btn-pill shadow-md transition flex items-center gap-2">
+              <span>Book Your Foot Consultation</span>
+              <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <span class="text-xs text-[#20265B] flex items-center gap-1.5 font-bold">
+              <span class="text-[#FEB518] text-base">★★★★★</span> 4.9/5 Average Patient Rating
+            </span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white group">
+            <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1000&q=80" alt="Pain-free runner tying shoe" class="w-full h-80 sm:h-96 object-cover img-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg border border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#61CE70]">Verified Outcome</span>
+                <h4 class="text-xs font-bold text-[#20265B]">10,000+ Active Pain-Free Steps</h4>
+              </div>
+              <div class="text-[#FEB518] text-sm font-bold flex items-center">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#0F256C]">98%</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Pain Reduction</div>
+        <p class="text-[11px] text-[#7A7A7A]">Reported after 2 weeks</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#61CE70]">100%</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Custom Fit</div>
+        <p class="text-[11px] text-[#7A7A7A]">Molded dynamically</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#20265B]">10 Min</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Rapid Molding</div>
+        <p class="text-[11px] text-[#7A7A7A]">Ready to wear on spot</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#FEB518]">4.9★</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Patient Satisfaction</div>
+        <p class="text-[11px] text-[#7A7A7A]">Across 10,000+ walkers</p>
+      </div>
+    </div>
+
+    <!-- Video Testimonial Cards with Authentic Photographic Thumbnails -->
+    <div class="space-y-8">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+        <div>
+          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Assets: Patients Videos</span>
+          <h3 class="text-2xl font-bold text-[#20265B]">Featured Video Reviews & Case Studies</h3>
+        </div>
+        <span class="text-xs text-[#0F256C] font-semibold bg-[#F1F5FF] px-4 py-2 btn-pill">50+ Video & Photo Assets in Drive</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Story 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div class="h-60 relative overflow-hidden cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=800&q=80" alt="Manoj Patient Review" class="w-full h-full object-cover img-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">01:20</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug">
+              “Very tremendous result! I feel more comfortable walking after my foot surgery. I think everybody should use it to know foot balance.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Manoj Wadhwami</span>
+                <span class="text-[#7A7A7A] text-[11px]">Post-Surgery Rehab</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 btn-pill">Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div class="h-60 relative overflow-hidden cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Shikha Patient Review" class="w-full h-full object-cover img-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">02:05</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug">
+              “I had a great experience with FootBalance India. Their custom insole fitting service is both scientific and customer focused.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Shikha Garg</span>
+                <span class="text-[#7A7A7A] text-[11px]">Plantar Fasciitis Relief</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 btn-pill">Ahmedabad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div class="h-60 relative overflow-hidden cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1483721074577-7090333334e3?auto=format&fit=crop&w=800&q=80" alt="Rajesh Marathon Runner" class="w-full h-full object-cover img-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">01:50</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug">
+              “Completed my 21K half marathon without recurring shin splints or arch burn. Best investment for serious runners.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Rajesh Kumar</span>
+                <span class="text-[#7A7A7A] text-[11px]">Marathon Runner</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 btn-pill">Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Booking Form Section -->
+    <div id="consultation" class="bg-[#F5F8FF] rounded-3xl p-8 lg:p-14 border border-indigo-100 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4">
+        <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Personalized Assessment</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">Schedule your foot analysis session</h3>
+        <p class="text-sm text-[#54595F] leading-relaxed">
+          Our certified specialists will conduct a computerized 3D foot scan, explain your arch pressure points, and create custom insoles in 10 minutes.
+        </p>
+        <div class="text-xs text-[#272424] space-y-2 pt-2 font-medium">
+          <p>✓ Available across Mumbai, Ahmedabad, Gwalior & Jabalpur</p>
+          <p>✓ 100% Non-Invasive & Computerized</p>
+          <p>✓ Instant Fit into Your Favorite Shoes</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+        <input type="text" placeholder="Full Name" class="w-full text-xs p-3.5 rounded-xl border border-slate-300 bg-[#F8FAFC]" />
+        <input type="tel" placeholder="Phone Number" class="w-full text-xs p-3.5 rounded-xl border border-slate-300 bg-[#F8FAFC]" />
+        <select class="w-full text-xs p-3.5 rounded-xl border border-slate-300 bg-[#F8FAFC] text-[#54595F]">
+          <option>Preferred Center (Mumbai / Ahmedabad / Gwalior / Jabalpur)</option>
+          <option>Mumbai - Lokhandwala</option>
+          <option>Ahmedabad - Gambol Store</option>
+          <option>Gwalior Center</option>
+          <option>Jabalpur Center</option>
+        </select>
+        <a href="https://wa.me/919820647062" target="_blank" class="block text-center w-full bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-xs py-3.5 btn-pill shadow transition">
+          Confirm Consultation Request
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+
+</body>
+</html>
