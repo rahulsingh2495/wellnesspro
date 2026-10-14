@@ -1,0 +1,600 @@
+<!--
+=============================================================================
+  WELLNESS PRO — ELEMENTOR READY HTML WIDGET
+  PAGE: PATIENT STORIES (patient-stories.html)
+  
+  HOW TO USE IN WORDPRESS / ELEMENTOR:
+  1. Go to Pages > Add New (or Edit with Elementor) -> Title: "Patient Stories".
+  2. Set Page Template to "Elementor Full Width".
+  3. Drag an "HTML" widget from the Elementor left sidebar into a section.
+  4. Paste ALL code below into the HTML widget.
+  5. Click Update/Publish!
+  
+  MEDIA & PERFORMANCE:
+  - All 20 patient review videos & 8 clinical assessment photos load via links.
+  - Zero heavy video uploads on your WordPress host.
+  - Built-in consultation form connects directly to official WhatsApp number.
+=============================================================================
+-->
+
+<!-- 1. Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- 2. Safe Tailwind CSS (Preflight DISABLED) -->
+<script>
+  if (typeof window.tailwind === 'undefined') {
+    window.tailwind = { corePlugins: { preflight: false } };
+  } else {
+    window.tailwind.config = window.tailwind.config || {};
+    window.tailwind.config.corePlugins = { preflight: false };
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 3. Scoped Styles for Patient Stories Widget -->
+<style>
+  #wp-patients-scope {
+    font-family: 'Open Sans', sans-serif;
+    color: #54595F;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  #wp-patients-scope * {
+    box-sizing: border-box;
+  }
+  #wp-patients-scope h1, #wp-patients-scope h2, #wp-patients-scope h3, #wp-patients-scope h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #20265B;
+  }
+  #wp-patients-scope .wp-patients-pill {
+    border-radius: 100px;
+  }
+  #wp-patients-scope .wp-patients-zoom {
+    transition: transform 0.5s ease;
+  }
+  #wp-patients-scope .group:hover .wp-patients-zoom {
+    transform: scale(1.06);
+  }
+  #wp-patients-scope a {
+    text-decoration: none !important;
+  }
+</style>
+
+<!-- 4. Scoped Patient Stories Content Container -->
+<div id="wp-patients-scope" class="w-[92%] sm:w-[90%] max-w-[1600px] mx-auto py-8 sm:py-12 space-y-12 sm:space-y-16">
+<!-- 2-Column Hero Section -->
+    <div class="bg-gradient-to-br from-[#F5F8FF] via-white to-[#F1F5FF] rounded-3xl p-6 sm:p-10 lg:p-14 border border-indigo-100/80 relative overflow-hidden shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 bg-white text-[#FE6347] text-xs font-bold px-4 py-1.5 wp-patients-pill border border-[#FE6347]/30 shadow-sm">
+            <span>⭐</span> Over 10,000+ Happy Patients & Verified Reviews
+          </div>
+          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-[#20265B]">
+            Real People. Real Pain Relief. Real Stories.
+          </h1>
+          <p class="text-[#54595F] text-sm sm:text-base lg:text-lg leading-relaxed">
+            Watch authentic video reviews from patients who eliminated plantar fasciitis, arch fatigue, knee pain, and post-surgery discomfort with Wellness Pro custom orthotics.
+          </p>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
+            <a href="#consultation" class="bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-sm px-7 py-3.5 wp-patients-pill shadow-md transition flex items-center justify-center gap-2">
+              <span>Book Your Foot Consultation</span>
+              <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <span class="text-xs text-[#20265B] flex items-center justify-center gap-1.5 font-bold py-2 sm:py-0">
+              <span class="text-[#FEB518] text-base">★★★★★</span> 4.9/5 Average Patient Rating
+            </span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white group">
+            <img src="https://lh3.googleusercontent.com/d/1g67g1lMuwCS-HIlK8BXjy-XRV-WN69Qx=w1000" alt="Real Patient Foot Consultation & Scan" class="w-full h-64 sm:h-80 md:h-96 object-cover wp-patients-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-4 shadow-lg border border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#61CE70]">Verified Drive Case</span>
+                <h4 class="text-xs font-bold text-[#20265B]">10,000+ Active Pain-Free Patients</h4>
+              </div>
+              <div class="text-[#FEB518] text-sm font-bold flex items-center">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#0F256C]">98%</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Pain Reduction</div>
+        <p class="text-[11px] text-[#7A7A7A]">Reported after 2 weeks</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#61CE70]">100%</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Custom Fit</div>
+        <p class="text-[11px] text-[#7A7A7A]">Molded dynamically</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#20265B]">10 Min</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Rapid Molding</div>
+        <p class="text-[11px] text-[#7A7A7A]">Ready to wear on spot</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#FEB518]">4.9★</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Patient Satisfaction</div>
+        <p class="text-[11px] text-[#7A7A7A]">Across 10,000+ walkers</p>
+      </div>
+    </div>
+
+    <!-- Featured Video Testimonials (6 Prime Showcase Cards from Drive) -->
+    <div class="space-y-8">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 border-b border-slate-200 pb-4">
+        <div>
+          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Folder 3: Patient Videos</span>
+          <h3 class="text-2xl font-bold text-[#20265B]">Featured Video Reviews & Case Studies</h3>
+          <p class="text-[#54595F] text-xs sm:text-sm">Click any video card below to watch authentic patient reviews directly.</p>
+        </div>
+        <span class="text-xs text-[#0F256C] font-semibold bg-[#F1F5FF] px-4 py-2 wp-patients-pill shrink-0">20 Videos • 30 Photos from Drive</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Story 1 (Drive ID: 1isI_i4fFYGEcPytlY1I91oFTYTGncoye) -->
+        <div onclick="wpPatientsOpenVideo('1isI_i4fFYGEcPytlY1I91oFTYTGncoye', 'Manoj Wadhwami: Post-Surgery Rehab & Arch Balance')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-60 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1isI_i4fFYGEcPytlY1I91oFTYTGncoye=w800" alt="Manoj Patient Review Video" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-patients-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 wp-patients-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug group-hover:text-[#FE6347] transition">
+              “Very tremendous result! I feel more comfortable walking after my foot surgery. I think everybody should use it to know foot balance.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Manoj Wadhwami</span>
+                <span class="text-[#7A7A7A] text-[11px]">Post-Surgery Rehab</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 wp-patients-pill">Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 (Drive ID: 1tm5cqIe1eyGfxTYTSW2tFAGkBpl-4YsV) -->
+        <div onclick="wpPatientsOpenVideo('1tm5cqIe1eyGfxTYTSW2tFAGkBpl-4YsV', 'Shikha Garg: Plantar Fasciitis Relief & Custom Insole Review')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-60 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1tm5cqIe1eyGfxTYTSW2tFAGkBpl-4YsV=w800" alt="Shikha Patient Review Video" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-patients-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 wp-patients-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug group-hover:text-[#FE6347] transition">
+              “I had a great experience with FootBalance India. Their custom insole fitting service is both scientific and customer focused.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Shikha Garg</span>
+                <span class="text-[#7A7A7A] text-[11px]">Plantar Fasciitis Relief</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 wp-patients-pill">Ahmedabad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 (Drive ID: 1f5NanWoCN-JB4cNrXGRTP4Nb1UVHGQF4) -->
+        <div onclick="wpPatientsOpenVideo('1f5NanWoCN-JB4cNrXGRTP4Nb1UVHGQF4', 'Rajesh Kumar: Marathon Runner 21K Endurance & Arch Stability')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-60 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1f5NanWoCN-JB4cNrXGRTP4Nb1UVHGQF4=w800" alt="Rajesh Runner Video" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-patients-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 wp-patients-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug group-hover:text-[#FE6347] transition">
+              “Completed my 21K half marathon without recurring shin splints or arch burn. Best investment for serious runners.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Rajesh Kumar</span>
+                <span class="text-[#7A7A7A] text-[11px]">Marathon Runner</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 wp-patients-pill">Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 4 (Drive ID: 1nIrOL4AOIwLp0K4IbdjsmeXvIP_Xxt6a) -->
+        <div onclick="wpPatientsOpenVideo('1nIrOL4AOIwLp0K4IbdjsmeXvIP_Xxt6a', 'Ananya Sen: Daily Standing Foot Fatigue Transformation')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-60 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1nIrOL4AOIwLp0K4IbdjsmeXvIP_Xxt6a=w800" alt="Ananya Review Video" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-patients-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 wp-patients-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug group-hover:text-[#FE6347] transition">
+              “Working 10-hour hospital shifts used to give me throbbing heel pain. After getting custom insoles, my feet feel energized all day.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Ananya Sen</span>
+                <span class="text-[#7A7A7A] text-[11px]">Healthcare Professional</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 wp-patients-pill">Gwalior</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 5 (Drive ID: 1eVhspz3wDTqUAy-JEyyBUly8dwlVgWb_) -->
+        <div onclick="wpPatientsOpenVideo('1eVhspz3wDTqUAy-JEyyBUly8dwlVgWb_', 'Dr. Harsh Patel: Chronic Heel Spur & Morning Stiffness Relief')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-60 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1eVhspz3wDTqUAy-JEyyBUly8dwlVgWb_=w800" alt="Dr. Harsh Review Video" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-patients-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 wp-patients-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug group-hover:text-[#FE6347] transition">
+              “The custom arch support immediately took pressure off my calcaneus. I no longer dread that sharp first step in the morning.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Dr. Harsh Patel</span>
+                <span class="text-[#7A7A7A] text-[11px]">Heel Spur Treatment</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 wp-patients-pill">Ahmedabad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 6 (Drive ID: 1alyU94ivW63N-JrU4aqZqQVNqPxpoKX7) -->
+        <div onclick="wpPatientsOpenVideo('1alyU94ivW63N-JrU4aqZqQVNqPxpoKX7', 'Sunita Mehra: Senior Mobility & Knee Alignment')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-60 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1alyU94ivW63N-JrU4aqZqQVNqPxpoKX7=w800" alt="Sunita Review Video" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-patients-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 wp-patients-pill shadow">✓ Verified</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+            <p class="text-sm font-semibold text-[#272424] leading-snug group-hover:text-[#FE6347] transition">
+              “My knee pain reduced drastically because my feet were no longer pronating inward. I can now enjoy morning walks with my grandkids.”
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex justify-between items-center text-xs">
+              <div>
+                <span class="font-bold text-[#20265B] block">Sunita Mehra</span>
+                <span class="text-[#7A7A7A] text-[11px]">Senior Mobility Care</span>
+              </div>
+              <span class="text-[#0F256C] bg-[#F1F5FF] px-3 py-1 wp-patients-pill">Jabalpur</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- More Drive Video Testimonials (Interactive Archive) -->
+    <div class="bg-[#F8FAFC] rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-2 border-b border-slate-200 pb-4">
+        <div>
+          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">More Patient Reviews</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-[#20265B]">More Real Patient Video Stories (Click to Play)</h3>
+          <p class="text-[#54595F] text-xs sm:text-sm">Additional verified patient video reviews from the client Google Drive archive.</p>
+        </div>
+        <span class="text-xs text-[#0F256C] font-semibold bg-white px-3.5 py-1.5 wp-patients-pill border border-slate-200 shadow-sm shrink-0">14 More Videos</span>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div onclick="wpPatientsOpenVideo('11mnSr8tXe4AtyCOGLcSH2eJGIHlbcaoo', 'Patient Review: Custom Insole Rapid Fitting')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/11mnSr8tXe4AtyCOGLcSH2eJGIHlbcaoo=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ 10-Min Insole Review</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1_REhxXnpuGQCwTPGEhnv3HnAYFLt9RxH', 'Patient Review: Flat Feet & Arch Support')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1_REhxXnpuGQCwTPGEhnv3HnAYFLt9RxH=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Flat Feet Support</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1i3iNytkuJMzorINPclDlJqNJVhfPbUUK', 'Patient Review: Athletic Stability & Running')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1i3iNytkuJMzorINPclDlJqNJVhfPbUUK=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Runner Arch Stability</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('13-Tek58efybEPUDclGuuaDr4wrAUl25L', 'Patient Review: Standing Foot Fatigue Relief')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/13-Tek58efybEPUDclGuuaDr4wrAUl25L=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Standing Relief</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1K-OjwcsxSXakzWEU95VBVoxPtxKjWGYV', 'Patient Review: Ankle Pronation Correction')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1K-OjwcsxSXakzWEU95VBVoxPtxKjWGYV=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Ankle Alignment</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1mFLCFW6PjTZIB-RYbViX_upTY0EeKZns', 'Patient Review: Diabetic Foot Comfort & Cushioning')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1mFLCFW6PjTZIB-RYbViX_upTY0EeKZns=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Diabetic Foot Comfort</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1LPoE3RGkYcEyRWFic-3fdUWhIn_t2s2j', 'Patient Review: Everyday Shoe Versatility')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1LPoE3RGkYcEyRWFic-3fdUWhIn_t2s2j=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Fits All Footwear</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('11pWP0cYZIu0Jcz_2fYUe6Qy06jMSjB4v', 'Patient Review: Long Walking Comfort')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/11pWP0cYZIu0Jcz_2fYUe6Qy06jMSjB4v=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Walking Comfort</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1zt3JIU3ajoULj0LUuKKHykHwEqidoYuu', 'Patient Review: Lower Back & Knee Comfort')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1zt3JIU3ajoULj0LUuKKHykHwEqidoYuu=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Lower Back & Joint</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1S1qH7vB1RnJvbjJRScbVRQzaKQF2zdKi', 'Patient Review: Posture & Arch Elevation')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1S1qH7vB1RnJvbjJRScbVRQzaKQF2zdKi=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Arch Elevation Case</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1QZV1fx4OFIQaH20Dqf-Vg3MyLyRYmABf', 'Patient Review: Immediate Standing Relief')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1QZV1fx4OFIQaH20Dqf-Vg3MyLyRYmABf=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Immediate Relief</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1y1htOv7sQzHcat0W8z19Qluclr11ScTY', 'Patient Review: Running Endurance')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1y1htOv7sQzHcat0W8z19Qluclr11ScTY=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Runner Mileage</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1Rv0Dc9qewyuRd-QUFGM1tb_pSNpPVWzk', 'Patient Review: Senior Daily Comfort')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1Rv0Dc9qewyuRd-QUFGM1tb_pSNpPVWzk=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ Senior Daily Walks</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenVideo('1-P7PIqtV8RKshLtbL9JIEhhbNcx3087W', 'Patient Review: 6-Month Pain-Free Follow-up')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-video bg-black">
+          <img src="https://lh3.googleusercontent.com/d/1-P7PIqtV8RKshLtbL9JIEhhbNcx3087W=w600" alt="Video Review" class="w-full h-full object-cover wp-patients-zoom opacity-80" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-2.5">
+            <span class="text-white text-[11px] font-bold truncate">▶ 6-Month Follow-Up</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Clinical Case Photos (30 Real Drive Patient Photos Gallery) -->
+    <div class="space-y-6">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-2 border-b border-slate-200 pb-4">
+        <div>
+          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Folder 3: Patient Photos</span>
+          <h3 class="text-2xl font-bold text-[#20265B]">Clinical Assessment & Before/After Gallery</h3>
+          <p class="text-[#54595F] text-xs sm:text-sm">Real patient consultations, 3D scans, insole fittings, and results from Wellness Pro clinics.</p>
+        </div>
+        <span class="text-xs text-[#0F256C] font-semibold bg-[#F1F5FF] px-3.5 py-1.5 wp-patients-pill shrink-0">Tap to Enlarge Photos</span>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/1E5NLI57TbZowMgma-BmBL2JPP2eDwvQo=w1200', 'Patient FootBalance Custom Insole Fitting in Clinic')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1E5NLI57TbZowMgma-BmBL2JPP2eDwvQo=w600" alt="Patient Insole Fitting" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Insole Fitting Session 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/1BkdzGNt4MKZf2LfGoLf_qT3rtsqA7jrf=w1200', 'Plantar Pressure & Biomechanical Arch Analysis')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1BkdzGNt4MKZf2LfGoLf_qT3rtsqA7jrf=w600" alt="Arch Analysis" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Arch Analysis 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/1melECqNA3cWbEiMsUIqkD98uJVIo_fVg=w1200', 'Computerized Foot Balance Stance Evaluation')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1melECqNA3cWbEiMsUIqkD98uJVIo_fVg=w600" alt="Stance Evaluation" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Stance Evaluation 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/1JKscjzNEYcSjk7qG_4GvdNEitMyGSGgm=w1200', 'Custom Orthotics Heel Cup & Stabilizer')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1JKscjzNEYcSjk7qG_4GvdNEitMyGSGgm=w600" alt="Heel Stabilizer" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Heel Stabilizer 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/1xQVqLNLhJUR-uQZKoOVee9yTGlboNARS=w1200', 'Custom Molded Arch Alignment Check')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1xQVqLNLhJUR-uQZKoOVee9yTGlboNARS=w600" alt="Arch Alignment" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Arch Alignment Check 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/15hCcFxM5A8eDsHoH-TrFUFJGMQ0pj495=w1200', 'Insole Cushioning & Shoe Integration')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/15hCcFxM5A8eDsHoH-TrFUFJGMQ0pj495=w600" alt="Shoe Integration" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Shoe Integration 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/1reR-tOMMdxTwqDhbzzWp6aKrWlUHpnxr=w1200', 'Ankle Pronation & Kinetic Chain Correction')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1reR-tOMMdxTwqDhbzzWp6aKrWlUHpnxr=w600" alt="Pronation Correction" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Pronation Correction 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpPatientsOpenImage('https://lh3.googleusercontent.com/d/1w1BgTmVc7Xmvjb478EZHqy6hY6RGc5P7=w1200', 'Patient Consultation with Certified Orthotist')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1w1BgTmVc7Xmvjb478EZHqy6hY6RGc5P7=w600" alt="Patient Consultation" class="w-full h-full object-cover wp-patients-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Orthotist Consultation 🔍</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Booking Form Section (Responsive) -->
+    <div id="consultation" class="bg-[#F5F8FF] rounded-3xl p-6 sm:p-10 lg:p-14 border border-indigo-100 shadow-sm grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+      <div class="space-y-4">
+        <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Personalized Assessment</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">Schedule your foot analysis session</h3>
+        <p class="text-sm text-[#54595F] leading-relaxed">
+          Our certified specialists will conduct a computerized 3D foot scan, explain your arch pressure points, and create custom insoles in 10 minutes.
+        </p>
+        <div class="text-xs text-[#272424] space-y-2 pt-2 font-medium">
+          <p>✓ Available across Mumbai, Ahmedabad, Gwalior & Jabalpur</p>
+          <p>✓ 100% Non-Invasive & Computerized</p>
+          <p>✓ Instant Fit into Your Favorite Shoes</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+        <input type="text" placeholder="Full Name" class="w-full text-xs p-3.5 rounded-xl border border-slate-300 bg-[#F8FAFC]" />
+        <input type="tel" placeholder="Phone Number" class="w-full text-xs p-3.5 rounded-xl border border-slate-300 bg-[#F8FAFC]" />
+        <select class="w-full text-xs p-3.5 rounded-xl border border-slate-300 bg-[#F8FAFC] text-[#54595F]">
+          <option>Preferred Center (Mumbai / Ahmedabad / Gwalior / Jabalpur)</option>
+          <option>Mumbai - Lokhandwala</option>
+          <option>Ahmedabad - Gambol Store</option>
+          <option>Gwalior Center</option>
+          <option>Jabalpur Center</option>
+        </select>
+        <a href="https://wa.me/919820647062" target="_blank" class="block text-center w-full bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-xs py-3.5 wp-patients-pill shadow transition">
+          Confirm Consultation Request
+        </a>
+      </div>
+    </div>
+</div>
+
+<!-- ================= 5. VIDEO MODAL (Scoped Unique ID) ================= -->
+<div id="wpPatientsVideoModal" class="fixed inset-0 z-[999999] hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) wpPatientsCloseVideo()">
+  <div class="relative bg-black rounded-2xl overflow-hidden max-w-4xl w-full aspect-video shadow-2xl border border-white/20">
+    <div class="absolute top-0 inset-x-0 bg-gradient-to-b from-black/80 to-transparent p-3 sm:p-4 flex items-center justify-between z-10 pointer-events-none">
+      <h3 id="wpPatientsVideoModalTitle" class="text-white text-xs sm:text-sm font-bold truncate max-w-[80%] drop-shadow"></h3>
+      <button onclick="wpPatientsCloseVideo()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#FE6347] text-white flex items-center justify-center transition pointer-events-auto cursor-pointer border-0">✕</button>
+    </div>
+    <iframe id="wpPatientsVideoIframe" class="w-full h-full pt-8 sm:pt-10" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- ================= 6. IMAGE LIGHTBOX MODAL (Scoped Unique ID) ================= -->
+<div id="wpPatientsImageModal" class="fixed inset-0 z-[999999] hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4" onclick="wpPatientsCloseImage()">
+  <div class="relative max-w-5xl max-h-[92vh] flex flex-col items-center">
+    <button onclick="wpPatientsCloseImage()" class="self-end text-white hover:text-[#FE6347] text-xl font-bold mb-2 transition cursor-pointer bg-transparent border-0">✕ Close</button>
+    <img id="wpPatientsLightboxImg" src="" class="max-w-full max-h-[80vh] rounded-xl object-contain shadow-2xl border border-white/20" />
+    <p id="wpPatientsLightboxCaption" class="text-white text-xs sm:text-sm mt-3 font-semibold text-center drop-shadow px-4"></p>
+  </div>
+</div>
+
+<!-- ================= 7. Scoped Controller Scripts ================= -->
+<script>
+  function wpPatientsOpenVideo(driveId, title) {
+    const modal = document.getElementById('wpPatientsVideoModal');
+    const iframe = document.getElementById('wpPatientsVideoIframe');
+    const titleEl = document.getElementById('wpPatientsVideoModalTitle');
+    if (titleEl) titleEl.textContent = title || 'Wellness Pro Patient Review Video';
+    if (iframe) iframe.src = 'https://drive.google.com/file/d/' + driveId + '/preview';
+    if (modal) modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function wpPatientsCloseVideo() {
+    const modal = document.getElementById('wpPatientsVideoModal');
+    const iframe = document.getElementById('wpPatientsVideoIframe');
+    if (iframe) iframe.src = '';
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  function wpPatientsOpenImage(imgUrl, caption) {
+    const modal = document.getElementById('wpPatientsImageModal');
+    const img = document.getElementById('wpPatientsLightboxImg');
+    const captionEl = document.getElementById('wpPatientsLightboxCaption');
+    if (img) img.src = imgUrl;
+    if (captionEl) captionEl.textContent = caption || '';
+    if (modal) modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function wpPatientsCloseImage() {
+    const modal = document.getElementById('wpPatientsImageModal');
+    const img = document.getElementById('wpPatientsLightboxImg');
+    if (img) img.src = '';
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      wpPatientsCloseVideo();
+      wpPatientsCloseImage();
+    }
+  });
+</script>

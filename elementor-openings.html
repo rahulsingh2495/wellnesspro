@@ -1,0 +1,409 @@
+<!--
+=============================================================================
+  WELLNESS PRO — ELEMENTOR READY HTML WIDGET
+  PAGE: CENTER OPENINGS (openings.html)
+  
+  HOW TO USE IN WORDPRESS / ELEMENTOR:
+  1. Go to Pages > Add New (or Edit with Elementor) -> Title: "Center Openings".
+  2. Set Page Template to "Elementor Full Width".
+  3. Drag an "HTML" widget from the Elementor left sidebar into a section.
+  4. Paste ALL code below into the HTML widget.
+  5. Click Update/Publish!
+  
+  MEDIA & PERFORMANCE:
+  - All 65 city opening photos and video reels stream from Google CDN.
+  - Zero load on your WordPress server or database.
+  - Fully scoped scripts and preflight-disabled Tailwind prevent CSS conflicts.
+=============================================================================
+-->
+
+<!-- 1. Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- 2. Safe Tailwind CSS (Preflight DISABLED) -->
+<script>
+  if (typeof window.tailwind === 'undefined') {
+    window.tailwind = { corePlugins: { preflight: false } };
+  } else {
+    window.tailwind.config = window.tailwind.config || {};
+    window.tailwind.config.corePlugins = { preflight: false };
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 3. Scoped Styles for Openings Widget -->
+<style>
+  #wp-openings-scope {
+    font-family: 'Open Sans', sans-serif;
+    color: #54595F;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  #wp-openings-scope * {
+    box-sizing: border-box;
+  }
+  #wp-openings-scope h1, #wp-openings-scope h2, #wp-openings-scope h3, #wp-openings-scope h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #20265B;
+  }
+  #wp-openings-scope .wp-openings-pill {
+    border-radius: 100px;
+  }
+  #wp-openings-scope .wp-openings-zoom {
+    transition: transform 0.5s ease;
+  }
+  #wp-openings-scope .group:hover .wp-openings-zoom {
+    transform: scale(1.06);
+  }
+  #wp-openings-scope a {
+    text-decoration: none !important;
+  }
+</style>
+
+<!-- 4. Scoped Openings Content Container -->
+<div id="wp-openings-scope" class="w-[92%] sm:w-[90%] max-w-[1600px] mx-auto py-8 sm:py-12 space-y-12 sm:space-y-16">
+<!-- 2-Column Hero Section -->
+    <div class="bg-gradient-to-br from-[#F5F8FF] via-white to-[#F1F5FF] rounded-3xl p-6 sm:p-10 lg:p-14 border border-indigo-100/80 relative overflow-hidden shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 bg-white text-[#0F256C] text-xs font-bold px-4 py-1.5 wp-openings-pill border border-indigo-200 shadow-sm">
+            <span>📍</span> Nationwide Footprint & Milestone Celebrations
+          </div>
+          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-[#20265B]">
+            Bringing World-Class Wellness to Every Neighborhood
+          </h1>
+          <p class="text-[#54595F] text-sm sm:text-base lg:text-lg leading-relaxed">
+            Wellness Pro is rapidly growing across India! Explore our latest grand openings, retail inaugurations, and clinic partnerships in Ahmedabad, Gwalior, Jabalpur, and Lokhandwala Mumbai.
+          </p>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
+            <a href="#city-sections" class="bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-sm px-7 py-3.5 wp-openings-pill shadow-md transition flex items-center justify-center gap-2">
+              <span>Explore City Launches</span>
+              <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <a href="https://wellnesspro.in/franchisee-partner/" target="_blank" class="bg-[#F0DA69] hover:bg-[#e6ce57] text-[#20265B] font-bold text-sm px-7 py-3.5 wp-openings-pill shadow-sm transition text-center">
+              Partner With Us (Franchise)
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white group">
+            <img src="https://lh3.googleusercontent.com/d/1oJj1YsQoqV2N134liMv-88DlgpvO09CZ=w1000" alt="Center Grand Inauguration Celebration" class="w-full h-64 sm:h-80 md:h-96 object-cover wp-openings-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-4 shadow-lg border border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#61CE70]">Pan-India Network</span>
+                <h4 class="text-xs font-bold text-[#20265B]">4 Flagships & Store Openings</h4>
+              </div>
+              <span class="bg-[#20265B] text-white text-[10px] font-bold px-3 py-1 wp-openings-pill">65+ Drive Assets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expansion Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#0F256C]">4</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Featured Cities</div>
+        <p class="text-[11px] text-[#7A7A7A]">Ahmedabad • Gwalior • Jabalpur • Mumbai</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#61CE70]">65+</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Drive Media Assets</div>
+        <p class="text-[11px] text-[#7A7A7A]">Inauguration photos & videos</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#20265B]">10k+</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Foot Scans Performed</div>
+        <p class="text-[11px] text-[#7A7A7A]">Across network centers</p>
+      </div>
+      <div class="bg-[#F5F8FF] rounded-2xl p-6 border border-indigo-100 shadow-sm text-center space-y-1">
+        <div class="text-3xl sm:text-4xl font-black text-[#FEB518]">100%</div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[#54595F]">Certified Stations</div>
+        <p class="text-[11px] text-[#7A7A7A]">FootBalance standard</p>
+      </div>
+    </div>
+
+    <!-- 4 City Launches with Authentic Drive Media -->
+    <div id="city-sections" class="space-y-12">
+      
+      <!-- 1. Ahmedabad -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Folder: Gambol ahmedabad</span>
+            <h3 class="text-2xl font-bold text-[#20265B]">📍 Gambol Store, Ahmedabad Opening</h3>
+            <p class="text-xs sm:text-sm text-[#54595F]">21 High-Res Media Items • Sports & Lifestyle Kiosk Launch</p>
+          </div>
+          <span class="bg-[#F1F5FF] text-[#0F256C] font-bold text-xs px-3.5 py-1.5 wp-openings-pill shrink-0">Certified FootBalance Kiosk</span>
+        </div>
+
+        <!-- Ahmedabad Media Grid (Photos + Video Reels) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1oJj1YsQoqV2N134liMv-88DlgpvO09CZ=w1200', 'Gambol Ahmedabad: Ribbon Cutting Ceremony')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1oJj1YsQoqV2N134liMv-88DlgpvO09CZ=w600" alt="Ribbon Cutting" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Ribbon Cutting Ceremony ✂️</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1rPRiSqRr0uTr1h7Orihik4wQ6FOwq5XX=w1200', 'Gambol Ahmedabad: FootBalance Store Walkthrough')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1rPRiSqRr0uTr1h7Orihik4wQ6FOwq5XX=w600" alt="Store Walkthrough" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Store Walkthrough 🏬</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1_i9zNqPMbLPcoqrJAAXXoDouLGvhzCjW=w1200', 'Gambol Ahmedabad: Runner Gait Consultations')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1_i9zNqPMbLPcoqrJAAXXoDouLGvhzCjW=w600" alt="Runner Gait Consultations" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Runner Gait Analysis 👟</span>
+          </div>
+
+          <!-- Video Reel -->
+          <div onclick="wpOpeningsOpenVideo('1-5Yg0i_ZcSa1sYF9Q-iJYdUkB7qqT8cR', 'Ahmedabad Launch Video Tour & Celebrations')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border-2 border-[#FE6347] shadow-md flex items-end p-4 bg-black">
+            <img src="https://lh3.googleusercontent.com/d/1-5Yg0i_ZcSa1sYF9Q-iJYdUkB7qqT8cR=w600" alt="Launch Video" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom opacity-80" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/90 via-black/30 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow flex items-center gap-1.5">
+              <span>▶ Watch Launch Reel</span>
+              <span class="bg-[#FE6347] text-[10px] px-2 py-0.5 rounded-full font-extrabold">VIDEO</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 2. Gwalior -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Folder: gwalior</span>
+            <h3 class="text-2xl font-bold text-[#20265B]">📍 Gwalior Wellness Clinic Launch</h3>
+            <p class="text-xs sm:text-sm text-[#54595F]">21 High-Res Media Items • Healthcare & Medical Podiatry Expansion</p>
+          </div>
+          <span class="bg-[#F1F5FF] text-[#0F256C] font-bold text-xs px-3.5 py-1.5 wp-openings-pill shrink-0">Medical Orthotics Wing</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1xZWBgi-OzThyNUggshyWlekRdBjei3RG=w1200', 'Gwalior Clinic: Traditional Lamp Lighting Ceremony')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1xZWBgi-OzThyNUggshyWlekRdBjei3RG=w600" alt="Lamp Lighting Ceremony" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Lamp Lighting Ceremony 🪔</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1DTaMU3lmHR3Yf9cweYFsuLSyPSDCmA4R=w1200', 'Gwalior Clinic: Clinical Diagnostic Suite')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1DTaMU3lmHR3Yf9cweYFsuLSyPSDCmA4R=w600" alt="Clinical Room" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Clinical Diagnostic Room 🏥</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1ObxJ1S-6MO9mlrj9jVbvt3-lwoWGl19n=w1200', 'Gwalior Clinic: Patient First Consultations')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1ObxJ1S-6MO9mlrj9jVbvt3-lwoWGl19n=w600" alt="First Consultations" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">First Consultations 🩺</span>
+          </div>
+
+          <!-- Video Reel -->
+          <div onclick="wpOpeningsOpenVideo('1q0mapZwS4AU_5qMD1PBK9gRtYqDDBi3a', 'Gwalior Clinic Lamp Lighting & Inaugural Speech Video')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border-2 border-[#FE6347] shadow-md flex items-end p-4 bg-black">
+            <img src="https://lh3.googleusercontent.com/d/1q0mapZwS4AU_5qMD1PBK9gRtYqDDBi3a=w600" alt="Gwalior Inauguration Video" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom opacity-80" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/90 via-black/30 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow flex items-center gap-1.5">
+              <span>▶ Watch Gwalior Video</span>
+              <span class="bg-[#FE6347] text-[10px] px-2 py-0.5 rounded-full font-extrabold">VIDEO</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3. Jabalpur -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Folder: Jabalpur</span>
+            <h3 class="text-2xl font-bold text-[#20265B]">📍 Jabalpur Experience Center</h3>
+            <p class="text-xs sm:text-sm text-[#54595F]">15 High-Res Media Items • Community Health & Custom Orthotics</p>
+          </div>
+          <span class="bg-[#F1F5FF] text-[#0F256C] font-bold text-xs px-3.5 py-1.5 wp-openings-pill shrink-0">Comprehensive Center</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/18tw6-wOyW7Xf4k43VlSeM9iPPWLHLyKF=w1200', 'Jabalpur: Inaugural Celebration & Ribbon Cutting')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/18tw6-wOyW7Xf4k43VlSeM9iPPWLHLyKF=w600" alt="Inaugural Celebration" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Inaugural Celebration 🎊</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1hNa1Wx-lFV2jrc14A2aG4S5Hzzhu0kAa=w1200', 'Jabalpur: Product Showcase Lounge & Footwear')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1hNa1Wx-lFV2jrc14A2aG4S5Hzzhu0kAa=w600" alt="Product Showcase Lounge" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Product Showcase Lounge 🛋️</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1mTraH8jX5jpLeoOl9YEWHCKEHOsGdtbh=w1200', 'Jabalpur: Live 3D Foot Scan Demonstrations')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1mTraH8jX5jpLeoOl9YEWHCKEHOsGdtbh=w600" alt="Live Scan Demonstrations" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Live Scan Demonstrations 👣</span>
+          </div>
+
+          <!-- Video Reel -->
+          <div onclick="wpOpeningsOpenVideo('1cZRoO8qMLcTLWHHQG15aPdl7ysMyf4nu', 'Jabalpur Center Opening Day Reel & Event Tour')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border-2 border-[#FE6347] shadow-md flex items-end p-4 bg-black">
+            <img src="https://lh3.googleusercontent.com/d/1cZRoO8qMLcTLWHHQG15aPdl7ysMyf4nu=w600" alt="Jabalpur Video" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom opacity-80" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/90 via-black/30 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow flex items-center gap-1.5">
+              <span>▶ Watch Jabalpur Reel</span>
+              <span class="bg-[#FE6347] text-[10px] px-2 py-0.5 rounded-full font-extrabold">VIDEO</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 4. Lokhandwala Mumbai -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Folder: lokhandwala</span>
+            <h3 class="text-2xl font-bold text-[#20265B]">📍 Lokhandwala, Andheri West (Mumbai)</h3>
+            <p class="text-xs sm:text-sm text-[#54595F]">8 Prime High-Res Assets • Flagship Luxury Wellness Lounge</p>
+          </div>
+          <span class="bg-[#F1F5FF] text-[#0F256C] font-bold text-xs px-3.5 py-1.5 wp-openings-pill shrink-0">Mumbai Flagship</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1xqC1ryUG7Q62KsEeKwIz4VWMtJhiMG0R=w1200', 'Lokhandwala Mumbai: Prime Storefront Entrance on Main Road')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1xqC1ryUG7Q62KsEeKwIz4VWMtJhiMG0R=w600" alt="Storefront Entrance" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Prime Storefront Entrance 🏙️</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1I7wcLthRePMjFWWg_F-SNIdNUqK-7MNv=w1200', 'Lokhandwala Mumbai: Luxury Footwear & Orthotics Display Lounge')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1I7wcLthRePMjFWWg_F-SNIdNUqK-7MNv=w600" alt="Lounge Interior" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Luxury Lounge Interior ✨</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1sG6eMYjqHhiXKvzuIg13k1XrSIDCRm9f=w1200', 'Lokhandwala Mumbai: VIP & Marathoner Fitting Area')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1sG6eMYjqHhiXKvzuIg13k1XrSIDCRm9f=w600" alt="VIP Consultations" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">VIP & Runner Fittings 🌟</span>
+          </div>
+
+          <div onclick="wpOpeningsOpenImage('https://lh3.googleusercontent.com/d/1XG7XkmrbIixtKRt0gTNWUgUdW2M8EmOH=w1200', 'Lokhandwala Mumbai: Custom Shoe Matching & Ergonomic Testing')" class="h-56 rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm flex items-end p-4">
+            <img src="https://lh3.googleusercontent.com/d/1XG7XkmrbIixtKRt0gTNWUgUdW2M8EmOH=w600" alt="Shoe Matching" class="absolute inset-0 w-full h-full object-cover wp-openings-zoom" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <span class="relative z-10 text-white text-xs font-bold drop-shadow">Custom Shoe Matching 👟</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franchise Banner (Responsive) -->
+    <div id="franchise" class="bg-gradient-to-r from-[#20265B] to-[#0F256C] rounded-3xl p-6 sm:p-10 lg:p-14 text-white flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 shadow-xl">
+      <div class="space-y-3 max-w-2xl text-center md:text-left">
+        <span class="text-xs font-bold text-[#FEB518] uppercase tracking-widest">Partner With Us</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Open a Wellness Pro Franchise in Your City</h3>
+        <p class="text-slate-200 text-xs sm:text-sm leading-relaxed">
+          High-margin medical wellness franchise with turnkey diagnostic equipment, specialized training, and global brand recognition.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full md:w-auto">
+        <a href="tel:9820647062" class="bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm px-6 py-3.5 wp-openings-pill border border-white/25 transition text-center">
+          Call +91 982 064 7062
+        </a>
+        <a href="https://wellnesspro.in/franchisee-partner/" target="_blank" class="bg-[#FE6347] hover:bg-[#e0533a] text-white font-bold text-xs sm:text-sm px-7 py-3.5 wp-openings-pill shadow transition text-center">
+          Apply for Franchise
+        </a>
+      </div>
+    </div>
+</div>
+
+<!-- ================= 5. VIDEO MODAL (Scoped Unique ID) ================= -->
+<div id="wpOpeningsVideoModal" class="fixed inset-0 z-[999999] hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) wpOpeningsCloseVideo()">
+  <div class="relative bg-black rounded-2xl overflow-hidden max-w-4xl w-full aspect-video shadow-2xl border border-white/20">
+    <div class="absolute top-0 inset-x-0 bg-gradient-to-b from-black/80 to-transparent p-3 sm:p-4 flex items-center justify-between z-10 pointer-events-none">
+      <h3 id="wpOpeningsVideoModalTitle" class="text-white text-xs sm:text-sm font-bold truncate max-w-[80%] drop-shadow"></h3>
+      <button onclick="wpOpeningsCloseVideo()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#FE6347] text-white flex items-center justify-center transition pointer-events-auto cursor-pointer border-0">✕</button>
+    </div>
+    <iframe id="wpOpeningsVideoIframe" class="w-full h-full pt-8 sm:pt-10" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- ================= 6. IMAGE LIGHTBOX MODAL (Scoped Unique ID) ================= -->
+<div id="wpOpeningsImageModal" class="fixed inset-0 z-[999999] hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4" onclick="wpOpeningsCloseImage()">
+  <div class="relative max-w-5xl max-h-[92vh] flex flex-col items-center">
+    <button onclick="wpOpeningsCloseImage()" class="self-end text-white hover:text-[#FE6347] text-xl font-bold mb-2 transition cursor-pointer bg-transparent border-0">✕ Close</button>
+    <img id="wpOpeningsLightboxImg" src="" class="max-w-full max-h-[80vh] rounded-xl object-contain shadow-2xl border border-white/20" />
+    <p id="wpOpeningsLightboxCaption" class="text-white text-xs sm:text-sm mt-3 font-semibold text-center drop-shadow px-4"></p>
+  </div>
+</div>
+
+<!-- ================= 7. Scoped Controller Scripts ================= -->
+<script>
+  function wpOpeningsOpenVideo(driveId, title) {
+    const modal = document.getElementById('wpOpeningsVideoModal');
+    const iframe = document.getElementById('wpOpeningsVideoIframe');
+    const titleEl = document.getElementById('wpOpeningsVideoModalTitle');
+    if (titleEl) titleEl.textContent = title || 'Wellness Pro Center Opening Tour';
+    if (iframe) iframe.src = 'https://drive.google.com/file/d/' + driveId + '/preview';
+    if (modal) modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function wpOpeningsCloseVideo() {
+    const modal = document.getElementById('wpOpeningsVideoModal');
+    const iframe = document.getElementById('wpOpeningsVideoIframe');
+    if (iframe) iframe.src = '';
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  function wpOpeningsOpenImage(imgUrl, caption) {
+    const modal = document.getElementById('wpOpeningsImageModal');
+    const img = document.getElementById('wpOpeningsLightboxImg');
+    const captionEl = document.getElementById('wpOpeningsLightboxCaption');
+    if (img) img.src = imgUrl;
+    if (captionEl) captionEl.textContent = caption || '';
+    if (modal) modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function wpOpeningsCloseImage() {
+    const modal = document.getElementById('wpOpeningsImageModal');
+    const img = document.getElementById('wpOpeningsLightboxImg');
+    if (img) img.src = '';
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      wpOpeningsCloseVideo();
+      wpOpeningsCloseImage();
+    }
+  });
+</script>

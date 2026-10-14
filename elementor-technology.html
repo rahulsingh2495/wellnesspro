@@ -1,0 +1,449 @@
+<!--
+=============================================================================
+  WELLNESS PRO — ELEMENTOR READY HTML WIDGET
+  PAGE: OUR TECHNOLOGY & MACHINERY (technology.html)
+  
+  HOW TO USE IN WORDPRESS / ELEMENTOR:
+  1. Go to Pages > Add New (or Edit with Elementor) -> Title: "Our Technology".
+  2. Set Page Template to "Elementor Full Width" (so header & footer display).
+  3. Drag an "HTML" widget from the Elementor left sidebar into a section.
+  4. Paste ALL code below into the HTML widget.
+  5. Click Update/Publish!
+  
+  MEDIA & PERFORMANCE:
+  - All videos and images stream directly via Google CDN & Google Drive.
+  - Zero heavy uploads on your WordPress hosting server.
+  - Tailwind preflight is disabled to prevent styling conflicts with Elementor.
+=============================================================================
+-->
+
+<!-- 1. Google Fonts (Montserrat & Open Sans) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- 2. Safe Tailwind CSS (Preflight DISABLED to avoid Elementor theme conflicts) -->
+<script>
+  if (typeof window.tailwind === 'undefined') {
+    window.tailwind = { corePlugins: { preflight: false } };
+  } else {
+    window.tailwind.config = window.tailwind.config || {};
+    window.tailwind.config.corePlugins = { preflight: false };
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 3. Scoped Styles for Technology Widget -->
+<style>
+  #wp-tech-scope {
+    font-family: 'Open Sans', sans-serif;
+    color: #54595F;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  #wp-tech-scope * {
+    box-sizing: border-box;
+  }
+  #wp-tech-scope h1, #wp-tech-scope h2, #wp-tech-scope h3, #wp-tech-scope h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #20265B;
+  }
+  #wp-tech-scope .wp-tech-pill {
+    border-radius: 100px;
+  }
+  #wp-tech-scope .wp-tech-zoom {
+    transition: transform 0.5s ease;
+  }
+  #wp-tech-scope .group:hover .wp-tech-zoom {
+    transform: scale(1.06);
+  }
+  #wp-tech-scope a {
+    text-decoration: none !important;
+  }
+</style>
+
+<!-- 4. Scoped Technology Content Container -->
+<div id="wp-tech-scope" class="w-[92%] sm:w-[90%] max-w-[1600px] mx-auto py-8 sm:py-12 space-y-12 sm:space-y-16">
+<!-- 2-Column Hero Section -->
+    <div class="bg-gradient-to-br from-[#F5F8FF] via-white to-[#F1F5FF] rounded-3xl p-6 sm:p-10 lg:p-14 border border-indigo-100/80 relative overflow-hidden shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 bg-white text-[#FE6347] text-xs font-bold px-4 py-1.5 wp-tech-pill border border-[#FE6347]/30 shadow-sm">
+            <span>🔬</span> Precision Medical Engineering & Biomechanics
+          </div>
+          <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-[#20265B]">
+            Next-Generation Diagnostic & Custom Moulding Machinery
+          </h1>
+          <p class="text-[#54595F] text-sm sm:text-base lg:text-lg leading-relaxed">
+            Discover how Wellness Pro bridges global healthcare standards with personalized biomechanical comfort. From computerized 3D foot scanning to high-precision 10-minute thermal insole molding, our medical-grade equipment delivers scientifically validated pain relief.
+          </p>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
+            <a href="#book-scan" class="bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-sm px-7 py-3.5 wp-tech-pill shadow-md transition flex items-center justify-center gap-2">
+              <span>Schedule a 3D Scan Demo</span>
+              <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#machine-gallery" class="bg-[#F0DA69] hover:bg-[#e6ce57] text-[#20265B] font-bold text-sm px-6 py-3.5 wp-tech-pill shadow-sm transition flex items-center justify-center gap-2">
+              <span>Watch Machines in Action</span>
+              <svg class="w-4 h-4 text-[#20265B]" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white group">
+            <img src="https://lh3.googleusercontent.com/d/1PAm6r_VPh4R6dqk9JhBskxDLWDCbM7g0=w1000" alt="FootBalance 3D Digital Foot Scanner Clinic Setup" class="w-full h-64 sm:h-80 md:h-96 object-cover wp-tech-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-4 shadow-lg border border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#FE6347]">Drive Asset: Clinical Setup</span>
+                <h4 class="text-xs font-bold text-[#20265B]">FootBalance 3D Digital Sensor</h4>
+              </div>
+              <span class="bg-[#61CE70]/20 text-[#61CE70] text-[10px] font-bold px-2.5 py-1 wp-tech-pill border border-[#61CE70]/30 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#61CE70] animate-ping"></span> Active Scanner
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Core Technologies with Authentic Google Drive Photos -->
+    <div>
+      <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+        <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Our Medical Equipment Portfolio</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">Clinical-Grade Innovation at Every Step</h2>
+        <p class="text-[#54595F] text-sm sm:text-base">Designed in Europe and validated by orthotists, our equipment delivers exact anatomical alignment in minutes.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Machine 1: Scanner (Drive Photo: 1WASPQ9hJbZYm9m0KYpr321WN0WG1vYki) -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div class="h-56 relative overflow-hidden cursor-pointer" onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1WASPQ9hJbZYm9m0KYpr321WN0WG1vYki=w1200', 'FootBalance 3D Digital Foot Scanner & Sensor Plate')">
+            <img src="https://lh3.googleusercontent.com/d/1WASPQ9hJbZYm9m0KYpr321WN0WG1vYki=w800" alt="Foot Scanner Machine" class="w-full h-full object-cover wp-tech-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-[#F1F5FF] text-[#0F256C] text-[11px] font-bold px-3 py-1 wp-tech-pill shadow">Diagnostic System</span>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Pressure Plate & Laser Sensors</span>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-lg font-bold text-[#20265B]">FootBalance 3D Digital Foot Scanner</h3>
+            <p class="text-[#54595F] text-sm leading-relaxed">
+              Equipped with high-resolution pressure matrix sensors that map arch height, pronation, supination, and dynamic weight distribution across each square centimeter.
+            </p>
+            <ul class="text-xs text-[#54595F] space-y-2 pt-2 border-t border-slate-100">
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Micro-millimeter arch depth analysis</li>
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Identifies kinetic chain & joint misalignments</li>
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Non-invasive, safe & results in under 60 seconds</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Machine 2: Custom Moulding Station (Drive Photo: 1w0kcczeHbpnJ1Iu1-aGWctb9zRNo1dea) -->
+        <div class="bg-[#F5F8FF] rounded-2xl border-2 border-[#0F256C] overflow-hidden shadow-md transition flex flex-col justify-between group relative">
+          <div class="h-56 relative overflow-hidden cursor-pointer" onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1w0kcczeHbpnJ1Iu1-aGWctb9zRNo1dea=w1200', 'Custom Thermal Insole Moulding Station & Dynamic Pillows')">
+            <img src="https://lh3.googleusercontent.com/d/1w0kcczeHbpnJ1Iu1-aGWctb9zRNo1dea=w800" alt="Thermal Moulding Station" class="w-full h-full object-cover wp-tech-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-[#FE6347] text-white text-[11px] font-bold px-3.5 py-0.5 wp-tech-pill uppercase tracking-wider shadow">Most Popular</span>
+            <span class="absolute top-3 left-3 bg-[#F0DA69] text-[#20265B] text-[11px] font-bold px-3 py-1 wp-tech-pill shadow">Precision Molding</span>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Dynamic Molding Pillows</span>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-lg font-bold text-[#20265B]">Custom Thermal Insole Moulding Station</h3>
+            <p class="text-[#54595F] text-sm leading-relaxed">
+              Patented rapid thermal activation pillows that soften medical memory polymers, allowing dynamic molding directly to the patient's feet in neutral standing position.
+            </p>
+            <ul class="text-xs text-[#54595F] space-y-2 pt-2 border-t border-indigo-100">
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> 100% custom fit in just 10 minutes</li>
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Independent molding for left & right arches</li>
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Medical-grade dynamic support core</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Machine 3: Clinical Diagnostic & Podiatry Station (Drive Photo: 1bhetLrU_cLIEVbqOwXgLIswPiBo6QkqU) -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+          <div class="h-56 relative overflow-hidden cursor-pointer" onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1bhetLrU_cLIEVbqOwXgLIswPiBo6QkqU=w1200', 'Clinical Diagnostic Podiatry Suite & Joint Therapy')">
+            <img src="https://lh3.googleusercontent.com/d/1bhetLrU_cLIEVbqOwXgLIswPiBo6QkqU=w800" alt="Clinical Diagnostic Podiatry Suite" class="w-full h-full object-cover wp-tech-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-[#F1F5FF] text-[#20265B] text-[11px] font-bold px-3 py-1 wp-tech-pill shadow">Therapy & Recovery</span>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Dual-Wavelength Laser & LED</span>
+          </div>
+          <div class="p-6 space-y-4">
+            <h3 class="text-lg font-bold text-[#20265B]">Kineon Move+ Laser Joint Therapy</h3>
+            <p class="text-[#54595F] text-sm leading-relaxed">
+              Dual-wavelength targeted photobiomodulation utilizing deep red LED and near-infrared laser technology to penetrate deep into joint tissue, cartilage, and ligaments.
+            </p>
+            <ul class="text-xs text-[#54595F] space-y-2 pt-2 border-t border-slate-100">
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Stimulates cellular ATP & collagen repair</li>
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Relieves chronic knee, ankle, and tendon pain</li>
+              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Non-invasive with zero recovery time</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Video Demonstration Gallery (Authentic Drive Videos with Instant Player) -->
+    <div id="machine-gallery" class="bg-[#F5F8FF] rounded-3xl p-6 sm:p-10 border border-indigo-100 shadow-sm space-y-8">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-4 border-b border-indigo-200/60 pb-5">
+        <div>
+          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Drive Folder 1: Machine Videos</span>
+          <h3 class="text-2xl font-bold text-[#20265B]">Equipment in Action & Video Demonstrations</h3>
+          <p class="text-[#54595F] text-sm">Watch authentic clinical walkthroughs recorded at Wellness Pro centers. Click any video to play directly.</p>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-semibold text-[#0F256C] bg-white px-4 py-2 wp-tech-pill border border-indigo-100 shadow-sm shrink-0">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#61CE70] animate-pulse"></span>
+          <span>3 Videos • 14 Photos Ready</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Video 1 (Drive ID: 1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR) -->
+        <div onclick="wpTechOpenVideo('1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR', 'Thermal Molding & Dynamic Insole Forming Demo')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-56 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR=w800" alt="Thermal Molding Video" class="w-full h-full object-cover wp-tech-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-tech-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 wp-tech-pill shadow">Live Forming</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">Thermal Molding & Insole Forming Process</h4>
+            <p class="text-[#54595F] text-xs">Live forming demonstration showing heating pillows, foot stance, and dynamic polymer molding.</p>
+          </div>
+        </div>
+
+        <!-- Video 2 (Drive ID: 1e-CS6Za-FR29QUdGVPA0XLg_xmapInE8) -->
+        <div onclick="wpTechOpenVideo('1e-CS6Za-FR29QUdGVPA0XLg_xmapInE8', '3D Foot Scanner & Arch Alignment Analysis')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-56 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1e-CS6Za-FR29QUdGVPA0XLg_xmapInE8=w800" alt="3D Scanner Video" class="w-full h-full object-cover wp-tech-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-tech-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 wp-tech-pill shadow">Diagnostic</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">3D Foot Scanner & Arch Alignment</h4>
+            <p class="text-[#54595F] text-xs">Analyzing over-pronation, supination, and dynamic pressure points on computerized sensors.</p>
+          </div>
+        </div>
+
+        <!-- Video 3 (Drive ID: 1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf) -->
+        <div onclick="wpTechOpenVideo('1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf', 'Clinical Diagnostics & Machine Operation')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-56 relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf=w800" alt="Hygiene & Ergonomics Video" class="w-full h-full object-cover wp-tech-zoom" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 wp-tech-pill">▶ Drive Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 wp-tech-pill shadow">Clinic Standard</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">Clinical Hygiene & Ergonomic Setup</h4>
+            <p class="text-[#54595F] text-xs">Medical grade sanitization, custom tooling, and professional consultation equipment.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Complete Drive Photo Gallery: Diagnostic & Machinery Photos -->
+    <div class="space-y-6">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-2 border-b border-slate-200 pb-4">
+        <div>
+          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Client Drive Assets: Machine Photos</span>
+          <h3 class="text-2xl font-bold text-[#20265B]">Clinical Equipment & Machinery Gallery</h3>
+          <p class="text-[#54595F] text-xs sm:text-sm">High-resolution authentic equipment photos from Wellness Pro clinics. Tap any photo to enlarge.</p>
+        </div>
+        <span class="text-xs text-[#0F256C] font-semibold bg-[#F1F5FF] px-3.5 py-1.5 wp-tech-pill shrink-0">14 Verified Clinic Photos</span>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1yoXlACzOTL6VjC5_6zjjCPRBwXbqmdNi=w1200', 'Dynamic Thermal Molding Pillows in Neutral Standing Position')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1yoXlACzOTL6VjC5_6zjjCPRBwXbqmdNi=w600" alt="Dynamic Molding Pillows" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Dynamic Molding Pillows 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1qgj0DS4PZBABSW5bkUzDwx0VPqQuJpRA=w1200', 'Patient Stance & Arch Alignment on 3D Sensor Plate')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1qgj0DS4PZBABSW5bkUzDwx0VPqQuJpRA=w600" alt="Patient Foot Stance" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Patient Stance Analysis 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/12UykRC7oy4s5RH9q8418wrsvdvfHCAoI=w1200', 'Rapid Thermal Insole Heating Station & Core Activation')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/12UykRC7oy4s5RH9q8418wrsvdvfHCAoI=w600" alt="Thermal Heating Station" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Thermal Heating Station 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1g1jVWa-gdPsKkVKfABpero_e4TE56rR2=w1200', 'Real-Time Arch Depth & Dynamic Pressure Map Display')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1g1jVWa-gdPsKkVKfABpero_e4TE56rR2=w600" alt="Dynamic Pressure Screen" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Real-Time Pressure Map 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1QqAybIEcQc8Juu2vTB4cMGl4dQ7aPrI1=w1200', 'Orthotic Insole Trimming & Finishing Station')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1QqAybIEcQc8Juu2vTB4cMGl4dQ7aPrI1=w600" alt="Trimming Station" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Precision Insole Finishing 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1uip9t5gtllC5WiLl66m_GDmITxTo31rK=w1200', 'Clinical Diagnostic & Podiatry Fitting Tools')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1uip9t5gtllC5WiLl66m_GDmITxTo31rK=w600" alt="Podiatry Tools" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Clinical Fitting Tools 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1AWABYw_NlbyAsX57QLoZUQIGs9A9vzWe=w1200', 'Thermal Heating & Medical Polymer Softening Unit')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1AWABYw_NlbyAsX57QLoZUQIGs9A9vzWe=w600" alt="Polymer Softening Unit" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Polymer Softening Unit 🔍</span>
+          </div>
+        </div>
+
+        <div onclick="wpTechOpenImage('https://lh3.googleusercontent.com/d/1JFuzMqHE_QJUDyh0YEDC-6jmMMdux3m4=w1200', 'Custom Shoe Fitting & Dynamic Stance Testing')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
+          <img src="https://lh3.googleusercontent.com/d/1JFuzMqHE_QJUDyh0YEDC-6jmMMdux3m4=w600" alt="Shoe Fitting" class="w-full h-full object-cover wp-tech-zoom" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
+            <span class="text-white text-xs font-bold">Custom Shoe Matching 🔍</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4-Step Patient Journey -->
+    <div class="bg-[#F1F5FF] rounded-3xl p-8 lg:p-12 border border-indigo-100 shadow-sm space-y-8">
+      <div class="text-center max-w-xl mx-auto space-y-2">
+        <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Fast, Scientific, Non-Invasive</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">How the 10-Minute Custom Process Works</h3>
+        <p class="text-[#54595F] text-sm">No weeks of waiting for orthotics. Walk in and walk out with custom comfort.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
+          <div class="text-3xl font-black text-[#FE6347]">01</div>
+          <h4 class="font-bold text-[#20265B] text-base">3D Computerized Scan</h4>
+          <p class="text-xs text-[#54595F] leading-relaxed">You stand on our specialized pressure plates to capture digital contours and biomechanical arch height.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
+          <div class="text-3xl font-black text-[#FE6347]">02</div>
+          <h4 class="font-bold text-[#20265B] text-base">Gait & Stance Analysis</h4>
+          <p class="text-xs text-[#54595F] leading-relaxed">Our certified specialist reviews your ankle tilt, knee alignment, and foot pressure distribution.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
+          <div class="text-3xl font-black text-[#FE6347]">03</div>
+          <h4 class="font-bold text-[#20265B] text-base">Thermal Custom Molding</h4>
+          <p class="text-xs text-[#54595F] leading-relaxed">The insole is warmed in our machine and dynamically molded directly to your feet in minutes.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
+          <div class="text-3xl font-black text-[#FE6347]">04</div>
+          <h4 class="font-bold text-[#20265B] text-base">Instant Wear & Relief</h4>
+          <p class="text-xs text-[#54595F] leading-relaxed">Fitted into your favorite shoes immediately. Experience instant arch support and relief on your first step.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Bar (Responsive) -->
+    <div id="book-scan" class="bg-gradient-to-r from-[#20265B] to-[#0F256C] rounded-3xl p-6 sm:p-8 lg:p-12 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <h3 class="text-xl sm:text-2xl font-bold text-white">Experience our technology in person</h3>
+        <p class="text-xs sm:text-sm text-slate-200">Book a complimentary 3D foot scanning appointment at your nearest center today.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+        <a href="tel:9820647062" class="bg-white text-[#0F256C] font-bold text-sm px-6 py-3.5 wp-tech-pill hover:bg-slate-50 transition text-center">
+          Call +91 982 064 7062
+        </a>
+        <a href="#book-scan" class="bg-[#FE6347] hover:bg-[#e0533a] text-white font-bold text-sm px-7 py-3.5 wp-tech-pill shadow transition text-center">
+          Book Appointment
+        </a>
+      </div>
+    </div>
+</div>
+
+<!-- ================= 5. VIDEO MODAL (Scoped Unique ID) ================= -->
+<div id="wpTechVideoModal" class="fixed inset-0 z-[999999] hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) wpTechCloseVideo()">
+  <div class="relative bg-black rounded-2xl overflow-hidden max-w-4xl w-full aspect-video shadow-2xl border border-white/20">
+    <div class="absolute top-0 inset-x-0 bg-gradient-to-b from-black/80 to-transparent p-3 sm:p-4 flex items-center justify-between z-10 pointer-events-none">
+      <h3 id="wpTechVideoModalTitle" class="text-white text-xs sm:text-sm font-bold truncate max-w-[80%] drop-shadow"></h3>
+      <button onclick="wpTechCloseVideo()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#FE6347] text-white flex items-center justify-center transition pointer-events-auto cursor-pointer border-0">✕</button>
+    </div>
+    <iframe id="wpTechVideoIframe" class="w-full h-full pt-8 sm:pt-10" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- ================= 6. IMAGE LIGHTBOX MODAL (Scoped Unique ID) ================= -->
+<div id="wpTechImageModal" class="fixed inset-0 z-[999999] hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4" onclick="wpTechCloseImage()">
+  <div class="relative max-w-5xl max-h-[92vh] flex flex-col items-center">
+    <button onclick="wpTechCloseImage()" class="self-end text-white hover:text-[#FE6347] text-xl font-bold mb-2 transition cursor-pointer bg-transparent border-0">✕ Close</button>
+    <img id="wpTechLightboxImg" src="" class="max-w-full max-h-[80vh] rounded-xl object-contain shadow-2xl border border-white/20" />
+    <p id="wpTechLightboxCaption" class="text-white text-xs sm:text-sm mt-3 font-semibold text-center drop-shadow px-4"></p>
+  </div>
+</div>
+
+<!-- ================= 7. Scoped Controller Scripts ================= -->
+<script>
+  function wpTechOpenVideo(driveId, title) {
+    const modal = document.getElementById('wpTechVideoModal');
+    const iframe = document.getElementById('wpTechVideoIframe');
+    const titleEl = document.getElementById('wpTechVideoModalTitle');
+    if (titleEl) titleEl.textContent = title || 'Wellness Pro Equipment Demo';
+    if (iframe) iframe.src = 'https://drive.google.com/file/d/' + driveId + '/preview';
+    if (modal) modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function wpTechCloseVideo() {
+    const modal = document.getElementById('wpTechVideoModal');
+    const iframe = document.getElementById('wpTechVideoIframe');
+    if (iframe) iframe.src = '';
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  function wpTechOpenImage(imgUrl, caption) {
+    const modal = document.getElementById('wpTechImageModal');
+    const img = document.getElementById('wpTechLightboxImg');
+    const captionEl = document.getElementById('wpTechLightboxCaption');
+    if (img) img.src = imgUrl;
+    if (captionEl) captionEl.textContent = caption || '';
+    if (modal) modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function wpTechCloseImage() {
+    const modal = document.getElementById('wpTechImageModal');
+    const img = document.getElementById('wpTechLightboxImg');
+    if (img) img.src = '';
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      wpTechCloseVideo();
+      wpTechCloseImage();
+    }
+  });
+</script>
