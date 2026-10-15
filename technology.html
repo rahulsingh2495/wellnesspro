@@ -27,7 +27,9 @@
       width: 100%;
     }
     body { font-family: 'Open Sans', sans-serif; color: #54595F; background-color: #FFFFFF; }
-    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; color: #20265B; }
+    :where(h1, h2, h3, h4, h5, h6) { font-family: 'Montserrat', sans-serif; color: #20265B; }
+    .text-white { color: #FFFFFF !important; }
+    main, section { width: 90% !important; max-width: 90% !important; margin-left: auto !important; margin-right: auto !important; }
     .btn-pill { border-radius: 100px; }
     .active-nav-link { color: #FE6347 !important; border-bottom: 2.5px solid #FE6347; }
     .img-zoom { transition: transform 0.5s ease; }
