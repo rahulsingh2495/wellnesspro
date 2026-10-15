@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Patient Video Stories — Wellness Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; color: #54595F; background-color: #FFFFFF; }
+    :where(h1, h2, h3, h4, h5, h6) { font-family: 'Montserrat', sans-serif; color: #20265B; }
+    .text-white { color: #FFFFFF !important; }
+    main { width: 90% !important; max-width: 90% !important; margin-left: auto !important; margin-right: auto !important; }
+    .btn-pill { border-radius: 100px; }
+  </style>
+</head>
+<body class="bg-white min-h-screen antialiased flex flex-col justify-between overflow-x-hidden w-full">
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>All Patient Video Stories — Wellness Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Open+Sans+Hebrew+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --e-global-color-primary: #6EC1E4;
+      --e-global-color-secondary: #54595F;
+      --e-global-color-accent: #61CE70;
+      --e-global-color-coral: #FE6347;
+      --e-global-color-amber: #FEB518;
+      --e-global-color-yellow: #F0DA69;
+      --e-global-color-navy-dark: #20265B;
+      --e-global-color-navy-royal: #0F256C;
+      --e-global-color-topbar-bg: #F1F5FF;
+      --e-global-color-soft-bg: #F5F8FF;
+    }
+    html, body {
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+    }
+    body { font-family: 'Open Sans', sans-serif; color: #54595F; background-color: #FFFFFF; }
+    :where(h1, h2, h3, h4, h5, h6) { font-family: 'Montserrat', sans-serif; color: #20265B; }
+    .text-white { color: #FFFFFF !important; }
+    main, section { width: 90% !important; max-width: 90% !important; margin-left: auto !important; margin-right: auto !important; }
+    .btn-pill { border-radius: 100px; }
+    .active-nav-link { color: #FE6347 !important; border-bottom: 2.5px solid #FE6347; }
+    .img-zoom { transition: transform 0.5s ease; }
+    .group:hover .img-zoom { transform: scale(1.06); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-white min-h-screen antialiased flex flex-col justify-between overflow-x-hidden w-full">
+
+  <!-- ================= TOPBAR (RESPONSIVE) ================= -->
+  <header class="w-full">
+    <div class="bg-[#F1F5FF] text-[#272424] text-[11px] sm:text-xs py-2 border-b border-indigo-100/60">
+      <div class="w-[90%] mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 text-center sm:text-left">
+        <div class="flex items-center gap-2 font-medium">
+          <span class="hidden sm:inline">We understand that each patient is unique</span>
+          <a href="https://wellnesspro.in/about-us/" target="_blank" class="text-[#0F256C] font-semibold hover:text-[#FE6347] transition flex items-center gap-1">
+            <span>Learn More About Us</span>
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-4 sm:gap-6 font-semibold">
+          <a href="tel:9820647062" class="text-[#0F256C] hover:text-[#FE6347] transition flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 text-[#0F256C]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+            <span>+91 982 064 7062</span>
+          </a>
+          <span class="text-slate-300">|</span>
+          <a href="mailto:info@wellnesspro.in" class="text-[#0F256C] hover:text-[#FE6347] transition flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 text-[#0F256C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>info@wellnesspro.in</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header (Fully Mobile-Responsive) -->
+    <div class="bg-white border-b border-slate-200 sticky top-0 z-40">
+      <div class="w-[90%] mx-auto py-3 sm:py-3.5 flex items-center justify-between gap-4">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center shrink-0">
+          <img src="https://wellnesspro.in/wp-content/uploads/2025/06/WELLNESS-PRO-Logo-HD-1.png" alt="Wellness Pro Logo" class="h-9 sm:h-11 md:h-12 w-auto object-contain" />
+        </a>
+
+        <!-- Desktop Navigation: Only 3 New Proposed Pages (lg and up) -->
+        <nav class="hidden lg:flex items-center gap-8 xl:gap-10 text-[15px] xl:text-[16px] font-bold whitespace-nowrap">
+          <a href="technology.html" class="text-[#0F256C] hover:text-[#FE6347] font-bold transition py-1">
+            Our Technology
+          </a>
+          <a href="openings.html" class="text-[#0F256C] hover:text-[#FE6347] font-bold transition py-1">
+            Center Openings
+          </a>
+          <a href="patient-stories.html" class="active-nav-link text-[#FE6347] font-bold pb-1">
+            Patient Stories
+          </a>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="hidden lg:flex items-center gap-3 shrink-0">
+          <a href="#consultation" class="bg-[#20265B] hover:bg-[#0F256C] text-white text-xs sm:text-sm font-semibold px-6 py-2.5 btn-pill shadow-sm transition flex items-center gap-2 whitespace-nowrap">
+            <span>Book Consultation</span>
+            <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+        <!-- Mobile Controls (Call button + Hamburger Toggle) -->
+        <div class="flex lg:hidden items-center gap-2 shrink-0">
+          <a href="tel:9820647062" class="bg-[#20265B] text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1 shadow-sm">
+            <span>📞</span>
+            <span class="text-[11px]">Call</span>
+          </a>
+          <button onclick="toggleMobileMenu()" class="p-2 rounded-xl text-[#20265B] hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Menu">
+            <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Dropdown Drawer -->
+      <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-2.5 shadow-xl">
+        <span class="text-[11px] font-bold text-[#7A7A7A] uppercase tracking-wider block">New Proposed Pages</span>
+        <a href="technology.html" class="w-full text-left font-bold text-sm py-2.5 px-3 rounded-xl text-[#0F256C] hover:bg-slate-50 flex items-center justify-between">
+          <span>🔬 1. Our Technology</span>
+          <span class="text-xs">→</span>
+        </a>
+        <a href="openings.html" class="w-full text-left font-bold text-sm py-2.5 px-3 rounded-xl text-[#0F256C] hover:bg-slate-50 flex items-center justify-between">
+          <span>📍 2. Center Openings</span>
+          <span class="text-xs">→</span>
+        </a>
+        <a href="patient-stories.html" class="w-full text-left font-bold text-sm py-2.5 px-3 rounded-xl bg-[#F5F8FF] text-[#FE6347] flex items-center justify-between">
+          <span>💬 3. Patient Stories</span>
+          <span class="text-xs">→</span>
+        </a>
+        <div class="pt-2">
+          <a href="#consultation" class="block w-full bg-[#20265B] text-white font-bold text-xs py-3 btn-pill text-center shadow">
+            Book Consultation
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Quick Switcher Tab Bar -->
+      <div class="flex lg:hidden overflow-x-auto no-scrollbar border-t border-slate-100 bg-[#F8FAFC] px-3 py-2 gap-2 text-xs font-bold justify-start sm:justify-center">
+        <a href="technology.html" class="shrink-0 px-3.5 py-1.5 rounded-full bg-white text-[#0F256C] border border-slate-200 flex items-center gap-1.5">
+          <span>🔬 1. Technology</span>
+        </a>
+        <a href="openings.html" class="shrink-0 px-3.5 py-1.5 rounded-full bg-white text-[#0F256C] border border-slate-200 flex items-center gap-1.5">
+          <span>📍 2. Openings</span>
+        </a>
+        <a href="patient-stories.html" class="shrink-0 px-3.5 py-1.5 rounded-full bg-[#20265B] text-white shadow-sm flex items-center gap-1.5">
+          <span>💬 3. Stories</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT (RESPONSIVE) ================= -->
+  <main class="w-[90%] mx-auto py-6 sm:py-8 space-y-12 sm:space-y-16 flex-1">
+<div class="space-y-10 sm:space-y-12">
+
+
+  <!-- Header Banner with Back Navigation -->
+  <div class="bg-gradient-to-br from-[#F5F8FF] via-white to-[#F1F5FF] rounded-3xl p-6 sm:p-10 border border-indigo-100 shadow-sm space-y-4">
+    <a href="patient-stories.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#0F256C] hover:text-[#FE6347] transition">
+      <span>← Back to Patient Stories</span>
+    </a>
+    <div class="space-y-2">
+      <h1 class="text-2xl sm:text-4xl font-extrabold text-[#20265B]">
+        All Patient Video Stories & Verified Reviews
+      </h1>
+      <p class="text-sm sm:text-base text-[#54595F] max-w-3xl leading-relaxed">
+        Watch all 20 authentic patient video testimonials from Wellness Pro clinics across India. Filter by condition or browse the full recovery archive.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap gap-2 pt-2">
+      <button onclick="wpFilterPatients('all')" id="wp-filter-all" class="px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition">All Stories (20)</button>
+      <button onclick="wpFilterPatients('plantar')" id="wp-filter-plantar" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Plantar Fasciitis</button>
+      <button onclick="wpFilterPatients('heel')" id="wp-filter-heel" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Heel Spur</button>
+      <button onclick="wpFilterPatients('sports')" id="wp-filter-sports" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Sports & Running</button>
+      <button onclick="wpFilterPatients('healthcare')" id="wp-filter-healthcare" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Healthcare Staff & Doctors</button>
+      <button onclick="wpFilterPatients('mobility')" id="wp-filter-mobility" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Senior Mobility</button>
+      <button onclick="wpFilterPatients('posture')" id="wp-filter-posture" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Posture & Knee</button>
+    </div>
+  </div>
+
+  <!-- 20-Video Grid -->
+  <div id="wp-all-patients-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    
+    <div onclick="wpAllPatientsOpenVideo('1isI_i4fFYGEcPytlY1I91oFTYTGncoye', 'Manoj Wadhwa: Severe Arch Pain Relief')" data-category="plantar" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1isI_i4fFYGEcPytlY1I91oFTYTGncoye=w800" alt="Manoj Wadhwa" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Plantar Fasciitis</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Manoj Wadhwa</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Eliminated sharp morning heel pain within 3 weeks of custom 3D insole usage.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Severe Arch Pain Relief</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Mumbai</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1tm5cqIe1eyGfxTYTSW2tFAGkBpl-4YsV', 'Shikha Gupta: Chronic Posture Recovery')" data-category="posture" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1tm5cqIe1eyGfxTYTSW2tFAGkBpl-4YsV=w800" alt="Shikha Gupta" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Knee & Posture</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Shikha Gupta</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Overcame prolonged standing fatigue and lower back strain after personal gait scan.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Chronic Posture Recovery</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Ahmedabad</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1f5NanWoCN-JB4cNrXGRTP4Nb1UVHGQF4', 'Rajesh K.: Marathon Runner Support')" data-category="sports" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1f5NanWoCN-JB4cNrXGRTP4Nb1UVHGQF4=w800" alt="Rajesh K." class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Marathon & Sports</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Rajesh K.</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Custom athletic insoles corrected overpronation and boosted running endurance.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Marathon Runner Support</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Mumbai</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1nIrOL4AOIwLp0K4IbdjsmeXvIP_Xxt6a', 'Ananya Sen: 10-Hour Hospital Shift Relief')" data-category="healthcare" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1nIrOL4AOIwLp0K4IbdjsmeXvIP_Xxt6a=w800" alt="Ananya Sen" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Healthcare Staff</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Ananya Sen</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Hospital shifts no longer cause throbbing heel pain. Feet stay energized.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">10-Hour Hospital Shift Relief</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Gwalior</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1eVhspz3wDTqUAy-JEyyBUly8dwlVgWb_', 'Dr. Harsh Patel: Calcaneus Spur Relief')" data-category="heel" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1eVhspz3wDTqUAy-JEyyBUly8dwlVgWb_=w800" alt="Dr. Harsh Patel" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Heel Spur</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Dr. Harsh Patel</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Immediate pressure relief off calcaneus; no more sharp morning steps.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Calcaneus Spur Relief</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Ahmedabad</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1alyU94ivW63N-JrU4aqZqQVNqPxpoKX7', 'Sunita Mehra: Knee Alignment & Joint Balance')" data-category="mobility" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1alyU94ivW63N-JrU4aqZqQVNqPxpoKX7=w800" alt="Sunita Mehra" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Senior Mobility</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Sunita Mehra</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Balanced walking posture reduced joint friction and eliminated walking fatigue.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Knee Alignment & Joint Balance</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Jabalpur</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('11mnSr8tXe4AtyCOGLcSH2eJGIHlbcaoo', 'Pooja Sharma: Daily Foot Fatigue Relief')" data-category="plantar" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/11mnSr8tXe4AtyCOGLcSH2eJGIHlbcaoo=w800" alt="Pooja Sharma" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Plantar Fasciitis</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Pooja Sharma</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Custom contoured arch support restored painless daily walking.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Daily Foot Fatigue Relief</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Mumbai</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1_REhxXnpuGQCwTPGEhnv3HnAYFLt9RxH', 'Vikas Malhotra: Athletic Performance Fitting')" data-category="sports" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1_REhxXnpuGQCwTPGEhnv3HnAYFLt9RxH=w800" alt="Vikas Malhotra" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Running & Fitness</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Vikas Malhotra</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Shock absorption insoles helped sprint and jump without shin splints.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Athletic Performance Fitting</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Ahmedabad</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1i3iNytkuJMzorINPclDlJqNJVhfPbUUK', 'Dr. R. K. Singhal: Orthopedic Endorsement')" data-category="healthcare" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1i3iNytkuJMzorINPclDlJqNJVhfPbUUK=w800" alt="Dr. R. K. Singhal" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Doctor Recommendation</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Dr. R. K. Singhal</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Recommended FootBalance 3D scans for non-invasive patient arch correction.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Orthopedic Endorsement</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Gwalior</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('13-Tek58efybEPUDclGuuaDr4wrAUl25L', 'Meenakshi Iyer: Heel Cushioning Recovery')" data-category="heel" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/13-Tek58efybEPUDclGuuaDr4wrAUl25L=w800" alt="Meenakshi Iyer" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Heel Spur</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Meenakshi Iyer</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Targeted deep heel cup insoles cushioned calcaneus pressure points.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Heel Cushioning Recovery</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Mumbai</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1K-OjwcsxSXakzWEU95VBVoxPtxKjWGYV', 'Arunav Banerjee: Flat Foot Kinetic Realignment')" data-category="sports" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1K-OjwcsxSXakzWEU95VBVoxPtxKjWGYV=w800" alt="Arunav Banerjee" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Sports & Active</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Arunav Banerjee</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Dynamic arch support fixed foot roll and improved daily stability.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Flat Foot Kinetic Realignment</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Jabalpur</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1mFLCFW6PjTZIB-RYbViX_upTY0EeKZns', 'Suman Chawla: Joint Weight Balance')" data-category="mobility" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1mFLCFW6PjTZIB-RYbViX_upTY0EeKZns=w800" alt="Suman Chawla" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Senior Mobility</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Suman Chawla</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Knee pressure significantly reduced after computerized foot balance test.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Joint Weight Balance</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Ahmedabad</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1LPoE3RGkYcEyRWFic-3fdUWhIn_t2s2j', 'Gaurav Rathore: Fast Morning Pain Relief')" data-category="plantar" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1LPoE3RGkYcEyRWFic-3fdUWhIn_t2s2j=w800" alt="Gaurav Rathore" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Plantar Fasciitis</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Gaurav Rathore</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“No more limping out of bed. Pain subsided within 2 weeks of custom insoles.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Fast Morning Pain Relief</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Gwalior</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('11pWP0cYZIu0Jcz_2fYUe6Qy06jMSjB4v', 'Sneha Deshmukh: Retail Long Standing Support')" data-category="healthcare" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/11pWP0cYZIu0Jcz_2fYUe6Qy06jMSjB4v=w800" alt="Sneha Deshmukh" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Workplace Relief</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Sneha Deshmukh</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Standing 8 hours in store became comfortable with customized foot inserts.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Retail Long Standing Support</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Mumbai</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1zt3JIU3ajoULj0LUuKKHykHwEqidoYuu', 'Deepak Verma: Long-Distance Runner Stability')" data-category="sports" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1zt3JIU3ajoULj0LUuKKHykHwEqidoYuu=w800" alt="Deepak Verma" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Marathon & Sports</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Deepak Verma</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Corrected inward ankle roll and eliminated post-run calf tightness.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Long-Distance Runner Stability</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Ahmedabad</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1S1qH7vB1RnJvbjJRScbVRQzaKQF2zdKi', 'Dr. Nidhi Saxena: Biomechanics Alignment')" data-category="healthcare" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1S1qH7vB1RnJvbjJRScbVRQzaKQF2zdKi=w800" alt="Dr. Nidhi Saxena" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Physiotherapist Review</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Dr. Nidhi Saxena</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Clinical evaluation confirms optimal plantar pressure distribution.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Biomechanics Alignment</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Jabalpur</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1QZV1fx4OFIQaH20Dqf-Vg3MyLyRYmABf', 'Kamaljeet Singh: Calcaneus Shock Cushioning')" data-category="heel" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1QZV1fx4OFIQaH20Dqf-Vg3MyLyRYmABf=w800" alt="Kamaljeet Singh" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Heel Spur</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Kamaljeet Singh</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Sharp heel sensations vanished when standing on molded memory polymers.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Calcaneus Shock Cushioning</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Gwalior</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1y1htOv7sQzHcat0W8z19Qluclr11ScTY', 'Alka Trivedi: Even Weight Distribution')" data-category="mobility" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1y1htOv7sQzHcat0W8z19Qluclr11ScTY=w800" alt="Alka Trivedi" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Mobility & Walking</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Alka Trivedi</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Walking feel is completely transformed. Back and knee alignment feels natural.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Even Weight Distribution</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Ahmedabad</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1Rv0Dc9qewyuRd-QUFGM1tb_pSNpPVWzk', 'Siddharth Rao: Foot Tension Release')" data-category="plantar" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1Rv0Dc9qewyuRd-QUFGM1tb_pSNpPVWzk=w800" alt="Siddharth Rao" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Plantar Fasciitis</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Siddharth Rao</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Dynamic arch core gives immediate relief from burning plantar tendon ache.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Foot Tension Release</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Mumbai</span>
+        </div>
+      </div>
+    </div>
+  
+
+    <div onclick="wpAllPatientsOpenVideo('1-P7PIqtV8RKshLtbL9JIEhhbNcx3087W', 'Neelam Joshi: Spine & Hip Equilibrium')" data-category="posture" class="patient-video-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://lh3.googleusercontent.com/d/1-P7PIqtV8RKshLtbL9JIEhhbNcx3087W=w800" alt="Neelam Joshi" class="w-full h-full object-cover img-zoom opacity-90 group-hover:opacity-100 transition" loading="lazy" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/25 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">Body Alignment</span>
+        <span class="absolute top-3 right-3 bg-[#61CE70] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">✓ Verified</span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+            <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 space-y-2.5">
+        <div class="text-[#FEB518] text-xs">★★★★★ <span class="text-[#7A7A7A] ml-1">5.0 / 5.0</span></div>
+        <h4 class="font-bold text-[#20265B] text-sm group-hover:text-[#FE6347] transition">Neelam Joshi</h4>
+        <p class="text-xs font-semibold text-[#54595F] leading-snug line-clamp-2">“Even arch support corrected hip tilting and restored painless daily walks.”</p>
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[11px]">
+          <span class="text-[#7A7A7A]">Spine & Hip Equilibrium</span>
+          <span class="text-[#0F256C] bg-[#F1F5FF] px-2.5 py-0.5 rounded-full font-bold">Jabalpur</span>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- CTA Box -->
+  <div class="bg-gradient-to-r from-[#20265B] to-[#0F256C] rounded-3xl p-6 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="space-y-2 text-center md:text-left max-w-xl">
+      <h3 class="text-xl sm:text-2xl font-bold text-white">Experience personalized pain relief</h3>
+      <p class="text-xs sm:text-sm text-slate-200">Book your 3D digital foot scan at any of our clinics in Mumbai, Ahmedabad, Gwalior, or Jabalpur.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+      <a href="https://wa.me/919820647062" target="_blank" class="bg-[#FE6347] hover:bg-[#e0533a] text-white font-bold text-xs sm:text-sm px-7 py-3.5 btn-pill shadow transition text-center">
+        Book Scan on WhatsApp
+      </a>
+      <a href="patient-stories.html" class="bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm px-6 py-3.5 btn-pill border border-white/25 transition text-center">
+        View Patient Stories Page
+      </a>
+    </div>
+  </div>
+
+
+</div>
+</main>
+<!-- Video Player Modal -->
+<div id="wpAllPatientsVideoModal" class="fixed inset-0 z-[999999] hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) wpAllPatientsCloseVideo()">
+  <div class="relative bg-black rounded-2xl overflow-hidden max-w-4xl w-full aspect-video shadow-2xl border border-white/20">
+    <div class="absolute top-0 inset-x-0 bg-gradient-to-b from-black/80 to-transparent p-3 sm:p-4 flex items-center justify-between z-10 pointer-events-none">
+      <h3 id="wpAllPatientsVideoModalTitle" class="text-white text-xs sm:text-sm font-bold truncate max-w-[80%] drop-shadow"></h3>
+      <button onclick="wpAllPatientsCloseVideo()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#FE6347] text-white flex items-center justify-center transition pointer-events-auto cursor-pointer border-0">✕</button>
+    </div>
+    <iframe id="wpAllPatientsVideoIframe" class="w-full h-full pt-8 sm:pt-10" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  function wpAllPatientsOpenVideo(driveId, title) {
+    const modal = document.getElementById('wpAllPatientsVideoModal');
+    const iframe = document.getElementById('wpAllPatientsVideoIframe');
+    const titleEl = document.getElementById('wpAllPatientsVideoModalTitle');
+    if (titleEl) titleEl.textContent = title || 'Wellness Pro Patient Review Video';
+    if (iframe) iframe.src = 'https://drive.google.com/file/d/' + driveId + '/preview';
+    if (modal) modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function wpAllPatientsCloseVideo() {
+    const modal = document.getElementById('wpAllPatientsVideoModal');
+    const iframe = document.getElementById('wpAllPatientsVideoIframe');
+    if (iframe) iframe.src = '';
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  function wpFilterPatients(category) {
+    const cards = document.querySelectorAll('#wp-all-patients-grid .patient-video-card');
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    ['all', 'plantar', 'heel', 'sports', 'healthcare', 'mobility', 'posture'].forEach(cat => {
+      const btn = document.getElementById('wp-filter-' + cat);
+      if (btn) {
+        if (cat === category) {
+          btn.className = 'px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition';
+        } else {
+          btn.className = 'px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition';
+        }
+      }
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') wpAllPatientsCloseVideo();
+  });
+</script>
+
+</body>
+</html>
