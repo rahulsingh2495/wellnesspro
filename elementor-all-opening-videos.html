@@ -61,6 +61,14 @@
   #wp-all-openings-scope a {
     text-decoration: none !important;
   }
+  #wp-all-openings-scope button[id^="wp-city-"] {
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  #wp-all-openings-scope button[id^="wp-city-"]:hover {
+    background-color: #20265B !important;
+    color: #FFFFFF !important;
+  }
 </style>
 
 <div id="wp-all-openings-scope" class="w-[90%] mx-auto py-8 sm:py-12 space-y-10 sm:space-y-12">
@@ -81,10 +89,10 @@
 
     <!-- City Filter Buttons -->
     <div class="flex flex-wrap gap-2 pt-2">
-      <button onclick="wpFilterOpenings('all')" id="wp-city-all" class="px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition">All Centers (23 Videos)</button>
-      <button onclick="wpFilterOpenings('ahmedabad')" id="wp-city-ahmedabad" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Ahmedabad - Gambol Store (11)</button>
-      <button onclick="wpFilterOpenings('jabalpur')" id="wp-city-jabalpur" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Jabalpur Center (8)</button>
-      <button onclick="wpFilterOpenings('gwalior')" id="wp-city-gwalior" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Gwalior Clinic (4)</button>
+      <button onclick="wpFilterOpenings('all')" id="wp-city-all" class="px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition cursor-pointer">All Centers (23 Videos)</button>
+      <button onclick="wpFilterOpenings('ahmedabad')" id="wp-city-ahmedabad" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Ahmedabad - Gambol Store (11)</button>
+      <button onclick="wpFilterOpenings('jabalpur')" id="wp-city-jabalpur" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Jabalpur Center (8)</button>
+      <button onclick="wpFilterOpenings('gwalior')" id="wp-city-gwalior" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Gwalior Clinic (4)</button>
     </div>
   </div>
 
@@ -730,9 +738,9 @@
       const btn = document.getElementById('wp-city-' + c);
       if (btn) {
         if (c === city) {
-          btn.className = 'px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition';
+          btn.className = 'px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition cursor-pointer';
         } else {
-          btn.className = 'px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition';
+          btn.className = 'px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer';
         }
       }
     });

@@ -1,23 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Patient Video Stories — Wellness Pro</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Open Sans', sans-serif; color: #54595F; background-color: #FFFFFF; }
-    :where(h1, h2, h3, h4, h5, h6) { font-family: 'Montserrat', sans-serif; color: #20265B; }
-    .text-white { color: #FFFFFF !important; }
-    main { width: 90% !important; max-width: 90% !important; margin-left: auto !important; margin-right: auto !important; }
-    .btn-pill { border-radius: 100px; }
-  </style>
-</head>
-<body class="bg-white min-h-screen antialiased flex flex-col justify-between overflow-x-hidden w-full">
-<!DOCTYPE html>
 <html lang="en" class="overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
@@ -55,6 +36,14 @@
     .group:hover .img-zoom { transform: scale(1.06); }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    button[id^="wp-filter-"] {
+      cursor: pointer !important;
+      transition: all 0.2s ease-in-out !important;
+    }
+    button[id^="wp-filter-"]:hover {
+      background-color: #20265B !important;
+      color: #FFFFFF !important;
+    }
   </style>
 </head>
 <body class="bg-white min-h-screen antialiased flex flex-col justify-between overflow-x-hidden w-full">
@@ -186,13 +175,13 @@
 
     <!-- Filter Buttons -->
     <div class="flex flex-wrap gap-2 pt-2">
-      <button onclick="wpFilterPatients('all')" id="wp-filter-all" class="px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition">All Stories (20)</button>
-      <button onclick="wpFilterPatients('plantar')" id="wp-filter-plantar" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Plantar Fasciitis</button>
-      <button onclick="wpFilterPatients('heel')" id="wp-filter-heel" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Heel Spur</button>
-      <button onclick="wpFilterPatients('sports')" id="wp-filter-sports" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Sports & Running</button>
-      <button onclick="wpFilterPatients('healthcare')" id="wp-filter-healthcare" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Healthcare Staff & Doctors</button>
-      <button onclick="wpFilterPatients('mobility')" id="wp-filter-mobility" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Senior Mobility</button>
-      <button onclick="wpFilterPatients('posture')" id="wp-filter-posture" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Posture & Knee</button>
+      <button onclick="wpFilterPatients('all')" id="wp-filter-all" class="px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition cursor-pointer">All Stories (20)</button>
+      <button onclick="wpFilterPatients('plantar')" id="wp-filter-plantar" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Plantar Fasciitis</button>
+      <button onclick="wpFilterPatients('heel')" id="wp-filter-heel" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Heel Spur</button>
+      <button onclick="wpFilterPatients('sports')" id="wp-filter-sports" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Sports & Running</button>
+      <button onclick="wpFilterPatients('healthcare')" id="wp-filter-healthcare" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Healthcare Staff & Doctors</button>
+      <button onclick="wpFilterPatients('mobility')" id="wp-filter-mobility" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Senior Mobility</button>
+      <button onclick="wpFilterPatients('posture')" id="wp-filter-posture" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Posture & Knee</button>
     </div>
   </div>
 
@@ -743,9 +732,9 @@
       const btn = document.getElementById('wp-filter-' + cat);
       if (btn) {
         if (cat === category) {
-          btn.className = 'px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition';
+          btn.className = 'px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition cursor-pointer';
         } else {
-          btn.className = 'px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition';
+          btn.className = 'px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer';
         }
       }
     });

@@ -61,6 +61,14 @@
   #wp-all-patients-scope a {
     text-decoration: none !important;
   }
+  #wp-all-patients-scope button[id^="wp-filter-"] {
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  #wp-all-patients-scope button[id^="wp-filter-"]:hover {
+    background-color: #20265B !important;
+    color: #FFFFFF !important;
+  }
 </style>
 
 <div id="wp-all-patients-scope" class="w-[90%] mx-auto py-8 sm:py-12 space-y-10 sm:space-y-12">
@@ -81,13 +89,13 @@
 
     <!-- Filter Buttons -->
     <div class="flex flex-wrap gap-2 pt-2">
-      <button onclick="wpFilterPatients('all')" id="wp-filter-all" class="px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition">All Stories (20)</button>
-      <button onclick="wpFilterPatients('plantar')" id="wp-filter-plantar" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Plantar Fasciitis</button>
-      <button onclick="wpFilterPatients('heel')" id="wp-filter-heel" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Heel Spur</button>
-      <button onclick="wpFilterPatients('sports')" id="wp-filter-sports" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Sports & Running</button>
-      <button onclick="wpFilterPatients('healthcare')" id="wp-filter-healthcare" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Healthcare Staff & Doctors</button>
-      <button onclick="wpFilterPatients('mobility')" id="wp-filter-mobility" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Senior Mobility</button>
-      <button onclick="wpFilterPatients('posture')" id="wp-filter-posture" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition">Posture & Knee</button>
+      <button onclick="wpFilterPatients('all')" id="wp-filter-all" class="px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition cursor-pointer">All Stories (20)</button>
+      <button onclick="wpFilterPatients('plantar')" id="wp-filter-plantar" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Plantar Fasciitis</button>
+      <button onclick="wpFilterPatients('heel')" id="wp-filter-heel" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Heel Spur</button>
+      <button onclick="wpFilterPatients('sports')" id="wp-filter-sports" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Sports & Running</button>
+      <button onclick="wpFilterPatients('healthcare')" id="wp-filter-healthcare" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Healthcare Staff & Doctors</button>
+      <button onclick="wpFilterPatients('mobility')" id="wp-filter-mobility" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Senior Mobility</button>
+      <button onclick="wpFilterPatients('posture')" id="wp-filter-posture" class="px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer">Posture & Knee</button>
     </div>
   </div>
 
@@ -637,9 +645,9 @@
       const btn = document.getElementById('wp-filter-' + cat);
       if (btn) {
         if (cat === category) {
-          btn.className = 'px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition';
+          btn.className = 'px-4 py-2 rounded-full text-xs font-bold bg-[#20265B] text-white shadow-sm transition cursor-pointer';
         } else {
-          btn.className = 'px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-indigo-100 text-[#0F256C] transition';
+          btn.className = 'px-4 py-2 rounded-full text-xs font-semibold bg-[#F1F5FF] hover:bg-[#20265B] hover:text-white text-[#0F256C] shadow-sm transition cursor-pointer';
         }
       }
     });
