@@ -1,0 +1,190 @@
+<!--
+=============================================================================
+  WELLNESS PRO — ELEMENTOR READY HTML WIDGET
+  SECTION: HOMEPAGE TECHNOLOGY & EQUIPMENT PREVIEW
+  
+  HOW TO USE IN WORDPRESS / ELEMENTOR:
+  1. Open your Homepage in Elementor ("Edit with Elementor").
+  2. Navigate to your Technology / Equipment section.
+  3. Drop an "HTML" widget into the section.
+  4. Paste ALL code below into the HTML widget.
+  5. Click Update/Publish!
+=============================================================================
+-->
+
+<!-- 1. Safe Tailwind CSS (Preflight DISABLED) -->
+<script>
+  if (typeof window.tailwind === 'undefined') {
+    window.tailwind = { corePlugins: { preflight: false } };
+  } else {
+    window.tailwind.config = window.tailwind.config || {};
+    window.tailwind.config.corePlugins = { preflight: false };
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 2. Scoped Styles -->
+<style>
+  #wp-home-tech-scope {
+    font-family: 'Open Sans', sans-serif;
+    color: #54595F;
+    box-sizing: border-box;
+    width: 90% !important;
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+  }
+  #wp-home-tech-scope * {
+    box-sizing: border-box;
+  }
+  #wp-home-tech-scope h2, #wp-home-tech-scope h3, #wp-home-tech-scope h4 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .wp-ht-zoom {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .group:hover .wp-ht-zoom {
+    transform: scale(1.05);
+  }
+  .wp-ht-pill {
+    border-radius: 9999px;
+  }
+</style>
+
+<div id="wp-home-tech-scope" class="py-12 space-y-12">
+
+  <!-- Section Header -->
+  <div class="text-center max-w-2xl mx-auto space-y-2">
+    <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Our Medical Equipment Portfolio</span>
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#20265B]">Clinical-Grade Innovation at Every Step</h2>
+    <p class="text-[#54595F] text-sm sm:text-base">Designed in Europe and validated by orthotists, our equipment delivers exact anatomical alignment in minutes.</p>
+  </div>
+
+  <!-- 6-Card Equipment Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Machine 1: FootBalance Scanner -->
+    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-scanner.jpg" alt="FootBalance Scanner" class="w-full h-full object-cover wp-ht-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#F1F5FF] text-[#0F256C] text-[11px] font-bold px-3 py-1 wp-ht-pill shadow">Diagnostic System</span>
+        <span class="absolute bottom-3 left-3 text-white text-xs font-bold">100% Custom Insoles in ~1 Hr</span>
+      </div>
+      <div class="p-6 space-y-3">
+        <h3 class="text-lg font-bold text-[#20265B]">FootBalance Scanner</h3>
+        <p class="text-[#54595F] text-xs leading-relaxed">
+          Analyses foot structure, arch type, and pressure distribution to provide 100% customised insoles in approximately one hour, supporting personalized solutions for flat feet and plantar fasciitis.
+        </p>
+        <a href="/technology#cat-footbalance-scanner" class="inline-flex items-center gap-1 text-xs font-bold text-[#FE6347] hover:underline pt-1">
+          <span>Read Full Specs</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Machine 2: FootBalance Kiosk Model -->
+    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-kiosk-clinic.jpg" alt="FootBalance Kiosk Model" class="w-full h-full object-cover wp-ht-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#F0DA69] text-[#20265B] text-[11px] font-bold px-3 py-1 wp-ht-pill shadow">Clinic & Retail</span>
+        <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Turnkey Franchise Setup</span>
+      </div>
+      <div class="p-6 space-y-3">
+        <h3 class="text-lg font-bold text-[#20265B]">FootBalance Kiosk Model</h3>
+        <p class="text-[#54595F] text-xs leading-relaxed">
+          Compact, professional foot-scanning setup designed for clinics, hospitals, sports centres, and retail outlets to offer advanced foot assessment and custom insoles.
+        </p>
+        <a href="/technology#cat-kiosk-model" class="inline-flex items-center gap-1 text-xs font-bold text-[#FE6347] hover:underline pt-1">
+          <span>Read Full Specs</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Machine 3: X5 Foot Scanner -->
+    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/x5-foot-scanner.jpg" alt="X5 Foot Scanner" class="w-full h-full object-cover wp-ht-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#FE6347] text-white text-[11px] font-bold px-3 py-1 wp-ht-pill shadow">AI Algorithm</span>
+        <span class="absolute bottom-3 left-3 text-white text-xs font-bold">10-Minute Customization</span>
+      </div>
+      <div class="p-6 space-y-3">
+        <h3 class="text-lg font-bold text-[#20265B]">X5 Foot Scanner</h3>
+        <p class="text-[#54595F] text-xs leading-relaxed">
+          AI-based biomechanical assessment and customized insole system assessing foot structure, lower-limb alignment and overall body posture in approximately 10 minutes.
+        </p>
+        <a href="/technology#cat-x5-scanner" class="inline-flex items-center gap-1 text-xs font-bold text-[#FE6347] hover:underline pt-1">
+          <span>Read Full Specs</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Machine 4: FOOTWORK LAB X3 Foot Pressure Scanner -->
+    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="h-56 bg-gradient-to-br from-[#20265B] to-[#0F256C] p-6 text-white flex flex-col justify-between relative overflow-hidden">
+        <div class="flex justify-between items-center">
+          <span class="bg-white/20 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Static & Dynamic</span>
+          <span class="text-[#FEB518] text-xs font-bold">Gait Detection</span>
+        </div>
+        <div class="space-y-1">
+          <div class="text-xl font-extrabold text-white">X3 Scanner</div>
+          <div class="text-[11px] text-slate-200">FOOTWORK LAB Biomechanics</div>
+        </div>
+        <span class="text-[10px] text-slate-300">Walking Pattern & Pressure Recording</span>
+      </div>
+      <div class="p-6 space-y-3">
+        <h3 class="text-lg font-bold text-[#20265B]">FOOTWORK LAB X3</h3>
+        <p class="text-[#54595F] text-xs leading-relaxed">
+          Combines static foot-pressure analysis, dynamic gait assessment, and lower-limb biomechanical alignment detection with AI-assisted assessment reports.
+        </p>
+        <a href="/technology#cat-x3-scanner" class="inline-flex items-center gap-1 text-xs font-bold text-[#FE6347] hover:underline pt-1">
+          <span>Read Full Specs</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Machine 5: Kineon MOVE+ Laser Joint Therapy -->
+    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="h-56 relative overflow-hidden bg-slate-900">
+        <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-device-main.jpg" alt="Kineon MOVE+ Device" class="w-full h-full object-cover wp-ht-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[11px] font-bold px-3 py-1 wp-ht-pill shadow">Laser Photobiomodulation</span>
+        <span class="absolute bottom-3 left-3 text-white text-xs font-bold">660nm LED + 808nm Laser</span>
+      </div>
+      <div class="p-6 space-y-3">
+        <h3 class="text-lg font-bold text-[#20265B]">Kineon MOVE+ Joint Therapy</h3>
+        <p class="text-[#54595F] text-xs leading-relaxed">
+          Wearable dual-wavelength photobiomodulation delivering targeted laser energy to knees, spine, neck, and ankles to stimulate cellular ATP and relieve joint pain.
+        </p>
+        <a href="/technology#cat-kineon-move" class="inline-flex items-center gap-1 text-xs font-bold text-[#FE6347] hover:underline pt-1">
+          <span>Read Full Specs</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Machine 6: View Full Tech Portfolio Card -->
+    <div class="bg-gradient-to-br from-[#F5F8FF] to-[#EBF0FF] rounded-2xl border-2 border-dashed border-[#0F256C]/30 p-6 flex flex-col justify-between items-center text-center space-y-4">
+      <div class="w-14 h-14 rounded-full bg-[#0F256C] text-white flex items-center justify-center text-2xl shadow-md">
+        🔬
+      </div>
+      <div class="space-y-2">
+        <h3 class="text-lg font-bold text-[#20265B]">Explore All Equipment & Videos</h3>
+        <p class="text-xs text-[#54595F]">
+          Watch our live 3D scanning walkthroughs, insole forming machines, and equipment demonstrations.
+        </p>
+      </div>
+      <a href="/technology" class="bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-xs px-6 py-3 wp-ht-pill shadow transition flex items-center gap-2">
+        <span>View Full Technology Page</span>
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</div>
