@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Our Technology & Machinery — Wellness Pro | Official Brand Theme</title>
+  <title>Our Technology & Machinery — Wellness Pro</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,9 +33,17 @@
     .btn-pill { border-radius: 100px; }
     .active-nav-link { color: #FE6347 !important; border-bottom: 2.5px solid #FE6347; }
     .img-zoom { transition: transform 0.5s ease; }
-    .group:hover .img-zoom { transform: scale(1.06); }
+    .group:hover .img-zoom { transform: scale(1.05); }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .wp-tech-nav-btn {
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    .wp-tech-nav-btn:hover {
+      background-color: #20265B !important;
+      color: #FFFFFF !important;
+    }
   </style>
 </head>
 <body class="bg-white min-h-screen antialiased flex flex-col justify-between overflow-x-hidden w-full">
@@ -44,10 +52,11 @@
   <header class="w-full">
     <div class="bg-[#F1F5FF] text-[#272424] text-[11px] sm:text-xs py-2 border-b border-indigo-100/60">
       <div class="w-[90%] mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 text-center sm:text-left">
-        <div class="flex items-center gap-2 font-medium">
-          <span class="hidden sm:inline">We understand that each patient is unique</span>
-          <a href="https://wellnesspro.in/about-us/" target="_blank" class="text-[#0F256C] font-semibold hover:text-[#FE6347] transition flex items-center gap-1">
-            <span>Learn More About Us</span>
+        <div class="flex items-center justify-center gap-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-[#61CE70] animate-pulse"></span>
+          <span class="font-medium text-[#0F256C]">India's Premier Custom Footwear, Orthotics & Biomechanics Clinics</span>
+          <a href="patient-stories.html#consultation" class="hidden md:inline-flex items-center gap-1 text-[#FE6347] font-bold hover:underline ml-2">
+            <span>Book 3D Scan</span>
             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
         </div>
@@ -65,7 +74,7 @@
       </div>
     </div>
 
-    <!-- Main Navigation Header (Fully Mobile-Responsive) -->
+    <!-- Main Navigation Header -->
     <div class="bg-white border-b border-slate-200 sticky top-0 z-40">
       <div class="w-[90%] mx-auto py-3 sm:py-3.5 flex items-center justify-between gap-4">
         
@@ -74,47 +83,41 @@
           <img src="https://wellnesspro.in/wp-content/uploads/2025/06/WELLNESS-PRO-Logo-HD-1.png" alt="Wellness Pro Logo" class="h-9 sm:h-11 md:h-12 w-auto object-contain" />
         </a>
 
-        <!-- Desktop Navigation: Only 3 New Proposed Pages (lg and up) -->
+        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-8 xl:gap-10 text-[15px] xl:text-[16px] font-bold whitespace-nowrap">
-          <a href="technology.html" class="active-nav-link text-[#FE6347] font-bold pb-1">
-            Our Technology
+          <a href="technology.html" class="text-[#FE6347] active-nav-link font-extrabold transition py-1 flex items-center gap-1.5">
+            <span>🔬 Our Technology</span>
           </a>
-          <a href="openings.html" class="text-[#0F256C] hover:text-[#FE6347] font-bold transition py-1">
-            Center Openings
+          <a href="openings.html" class="text-[#0F256C] hover:text-[#FE6347] transition py-1 flex items-center gap-1.5">
+            <span>📍 Center Openings</span>
           </a>
-          <a href="patient-stories.html" class="text-[#0F256C] hover:text-[#FE6347] font-bold transition py-1">
-            Patient Stories
+          <a href="patient-stories.html" class="text-[#0F256C] hover:text-[#FE6347] transition py-1 flex items-center gap-1.5">
+            <span>💬 Patient Stories</span>
           </a>
         </nav>
 
-        <!-- Desktop CTA -->
-        <div class="hidden lg:flex items-center gap-3 shrink-0">
-          <a href="patient-stories.html#consultation" class="bg-[#20265B] hover:bg-[#0F256C] text-white text-xs sm:text-sm font-semibold px-6 py-2.5 btn-pill shadow-sm transition flex items-center gap-2 whitespace-nowrap">
+        <!-- Right Header Action Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="patient-stories.html#consultation" class="bg-[#20265B] hover:bg-[#0F256C] text-white text-xs sm:text-sm font-bold px-5 py-2.5 sm:px-6 sm:py-3 btn-pill shadow transition flex items-center gap-2">
             <span>Book 3D Foot Scan</span>
-            <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            <svg class="w-3.5 h-3.5 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
         </div>
 
-        <!-- Mobile Controls (Call button + Hamburger Toggle) -->
-        <div class="flex lg:hidden items-center gap-2 shrink-0">
-          <a href="tel:9820647062" class="bg-[#20265B] text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1 shadow-sm">
-            <span>📞</span>
-            <span class="text-[11px]">Call</span>
-          </a>
-          <button onclick="toggleMobileMenu()" class="p-2 rounded-xl text-[#20265B] hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Menu">
-            <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
-            <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+        <!-- Mobile Hamburger Button -->
+        <div class="flex lg:hidden items-center">
+          <button type="button" onclick="toggleMobileMenu()" class="p-2 rounded-xl text-[#0F256C] hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle navigation menu">
+            <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
-
       </div>
 
       <!-- Mobile Dropdown Drawer -->
-      <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-2.5 shadow-xl">
-        <span class="text-[11px] font-bold text-[#7A7A7A] uppercase tracking-wider block">New Proposed Pages</span>
-        <a href="technology.html" class="w-full text-left font-bold text-sm py-2.5 px-3 rounded-xl bg-[#F5F8FF] text-[#FE6347] flex items-center justify-between">
+      <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3 shadow-lg">
+        <a href="technology.html" class="w-full text-left font-bold text-sm py-2.5 px-3 rounded-xl bg-[#FE6347]/10 text-[#FE6347] flex items-center justify-between">
           <span>🔬 1. Our Technology</span>
-          <span class="text-xs">→</span>
+          <span class="text-xs">Active</span>
         </a>
         <a href="openings.html" class="w-full text-left font-bold text-sm py-2.5 px-3 rounded-xl text-[#0F256C] hover:bg-slate-50 flex items-center justify-between">
           <span>📍 2. Center Openings</span>
@@ -149,42 +152,42 @@
   <!-- ================= MAIN CONTENT (RESPONSIVE) ================= -->
   <main class="w-[90%] mx-auto py-6 sm:py-8 space-y-12 sm:space-y-16 flex-1">
     
-    <!-- 2-Column Hero Section -->
+    <!-- ================= 2-Column Hero Section ================= -->
     <div class="bg-gradient-to-br from-[#F5F8FF] via-white to-[#F1F5FF] rounded-3xl p-6 sm:p-10 lg:p-14 border border-indigo-100/80 relative overflow-hidden shadow-sm">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
         <div class="lg:col-span-7 space-y-5 sm:space-y-6">
           <div class="inline-flex items-center gap-2 bg-white text-[#FE6347] text-xs font-bold px-4 py-1.5 btn-pill border border-[#FE6347]/30 shadow-sm">
-            <span>🔬</span> Precision Medical Engineering & Biomechanics
+            <span>🔬</span> Precision Medical Engineering & Diagnostics
           </div>
           <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-[#20265B]">
-            Next-Generation Diagnostic & Custom Moulding Machinery
+            Next-Generation Diagnostic & Custom Insole Machinery
           </h1>
           <p class="text-[#54595F] text-sm sm:text-base lg:text-lg leading-relaxed">
-            Discover how Wellness Pro bridges global healthcare standards with personalized biomechanical comfort. From computerized 3D foot scanning to high-precision 10-minute thermal insole molding, our medical-grade equipment delivers scientifically validated pain relief.
+            Explore Wellness Pro’s complete portfolio of European and medical-grade machinery. From computerized 3D foot scanning and AI-assisted posture detection to rapid on-site insole customisation and targeted laser joint therapy.
           </p>
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
-            <a href="patient-stories.html#consultation" class="bg-[#20265B] hover:bg-[#0F256C] text-white font-bold text-sm px-7 py-3.5 btn-pill shadow-md transition flex items-center justify-center gap-2">
-              <span>Schedule a 3D Scan Demo</span>
-              <svg class="w-4 h-4 text-[#FEB518]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#machine-gallery" class="bg-[#F0DA69] hover:bg-[#e6ce57] text-[#20265B] font-bold text-sm px-6 py-3.5 btn-pill shadow-sm transition flex items-center justify-center gap-2">
-              <span>Watch Machines in Action</span>
-              <svg class="w-4 h-4 text-[#20265B]" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/></svg>
-            </a>
+
+          <!-- Quick Jump Categories -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <a href="#cat-footbalance-scanner" class="wp-tech-nav-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#F1F5FF] text-[#0F256C] shadow-sm">FootBalance Scanner</a>
+            <a href="#cat-kiosk-model" class="wp-tech-nav-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#F1F5FF] text-[#0F256C] shadow-sm">Kiosk Model</a>
+            <a href="#cat-x5-scanner" class="wp-tech-nav-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#F1F5FF] text-[#0F256C] shadow-sm">X5 AI Scanner</a>
+            <a href="#cat-x3-scanner" class="wp-tech-nav-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#F1F5FF] text-[#0F256C] shadow-sm">X3 Pressure Scanner</a>
+            <a href="#cat-kineon-move" class="wp-tech-nav-btn px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#F1F5FF] text-[#0F256C] shadow-sm">Kineon MOVE+</a>
+            <a href="#scanning-videos" class="wp-tech-nav-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#FE6347] text-white shadow-sm hover:bg-[#e0533a] !text-white">▶ Watch Scanning Videos</a>
           </div>
         </div>
 
         <div class="lg:col-span-5">
-          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white group w-full h-[320px] sm:h-[380px] lg:h-[400px]" style="height: 400px !important; max-height: 400px !important;">
-            <img src="https://lh3.googleusercontent.com/d/1PAm6r_VPh4R6dqk9JhBskxDLWDCbM7g0=w1000" alt="FootBalance 3D Digital Foot Scanner Clinic Setup" class="w-full h-full object-cover img-zoom" style="height: 100% !important; max-height: 100% !important; width: 100% !important; object-fit: cover !important; object-position: center center !important;">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/80 via-transparent to-transparent"></div>
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white group w-full h-[320px] sm:h-[380px] lg:h-[400px]">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-scanner.jpg" alt="FootBalance Scanner Pedestal" class="w-full h-full object-cover img-zoom" style="height: 100% !important; max-height: 100% !important; width: 100% !important; object-fit: cover !important; object-position: center center !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-transparent to-transparent"></div>
             <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-4 shadow-lg border border-slate-100 flex items-center justify-between">
               <div>
-                <span class="text-[10px] font-bold uppercase tracking-wider text-[#FE6347]">Precision Diagnostic Suite</span>
-                <h4 class="text-xs font-bold text-[#20265B]">FootBalance 3D Digital Sensor</h4>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#FE6347]">Flagship Diagnostic Setup</span>
+                <h4 class="text-xs font-bold text-[#20265B]">FootBalance 3D Digital Scanner</h4>
               </div>
-              <span class="bg-[#61CE70]/20 text-[#61CE70] text-[10px] font-bold px-2.5 py-1 btn-pill border border-[#61CE70]/30 flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#61CE70] animate-ping"></span> Active Scanner
+              <span class="bg-[#61CE70]/20 text-[#227230] text-[10px] font-bold px-2.5 py-1 btn-pill border border-[#61CE70]/30 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#61CE70] animate-ping"></span> Active Diagnostic
               </span>
             </div>
           </div>
@@ -192,121 +195,368 @@
       </div>
     </div>
 
-    <!-- 3 Core Technologies with Diagnostic & Custom Molding Technology -->
-    <div>
-      <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
-        <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Our Medical Equipment Portfolio</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">Clinical-Grade Innovation at Every Step</h2>
-        <p class="text-[#54595F] text-sm sm:text-base">Designed in Europe and validated by orthotists, our equipment delivers exact anatomical alignment in minutes.</p>
-      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- ================= CATEGORY 1: FOOTBALANCE SCANNER ================= -->
+    <div id="cat-footbalance-scanner" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
-        <!-- Machine 1: Scanner (Drive Photo: 1WASPQ9hJbZYm9m0KYpr321WN0WG1vYki) -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
-          <div class="h-56 relative overflow-hidden cursor-pointer" onclick="openImageModal('https://lh3.googleusercontent.com/d/1WASPQ9hJbZYm9m0KYpr321WN0WG1vYki=w1200', 'FootBalance 3D Digital Foot Scanner & Sensor Plate')">
-            <img src="https://lh3.googleusercontent.com/d/1WASPQ9hJbZYm9m0KYpr321WN0WG1vYki=w800" alt="Foot Scanner Machine" class="w-full h-full object-cover img-zoom" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <span class="absolute top-3 left-3 bg-[#F1F5FF] text-[#0F256C] text-[11px] font-bold px-3 py-1 btn-pill shadow">Diagnostic System</span>
-            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Pressure Plate & Laser Sensors</span>
-          </div>
-          <div class="p-6 space-y-4">
-            <h3 class="text-lg font-bold text-[#20265B]">FootBalance 3D Digital Foot Scanner</h3>
-            <p class="text-[#54595F] text-sm leading-relaxed">
-              Equipped with high-resolution pressure matrix sensors that map arch height, pronation, supination, and dynamic weight distribution across each square centimeter.
-            </p>
-            <ul class="text-xs text-[#54595F] space-y-2 pt-2 border-t border-slate-100">
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Micro-millimeter arch depth analysis</li>
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Identifies kinetic chain & joint misalignments</li>
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Non-invasive, safe & results in under 60 seconds</li>
-            </ul>
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 relative group cursor-pointer aspect-[3/4] bg-slate-900" onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-scanner.jpg', 'FootBalance Scanner — Advanced 3D Foot Scanning Technology')">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-scanner.jpg" alt="FootBalance Scanner" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <span class="absolute top-3.5 left-3.5 bg-[#0F256C] text-white text-[11px] font-bold px-3 py-1 btn-pill shadow">Image 1</span>
+            <span class="absolute bottom-3.5 left-3.5 text-white text-xs font-bold flex items-center gap-1">
+              <span>🔍 Tap to view high-res photo</span>
+            </span>
           </div>
         </div>
 
-        <!-- Machine 2: Custom Moulding Station (Drive Photo: 1w0kcczeHbpnJ1Iu1-aGWctb9zRNo1dea) -->
-        <div class="bg-[#F5F8FF] rounded-2xl border-2 border-[#0F256C] overflow-hidden shadow-md transition flex flex-col justify-between group relative">
-          <div class="h-56 relative overflow-hidden cursor-pointer" onclick="openImageModal('https://lh3.googleusercontent.com/d/1w0kcczeHbpnJ1Iu1-aGWctb9zRNo1dea=w1200', 'Custom Thermal Insole Moulding Station & Dynamic Pillows')">
-            <img src="https://lh3.googleusercontent.com/d/1w0kcczeHbpnJ1Iu1-aGWctb9zRNo1dea=w800" alt="Thermal Moulding Station" class="w-full h-full object-cover img-zoom" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <span class="absolute top-3 right-3 bg-[#FE6347] text-white text-[11px] font-bold px-3.5 py-0.5 btn-pill uppercase tracking-wider shadow">Most Popular</span>
-            <span class="absolute top-3 left-3 bg-[#F0DA69] text-[#20265B] text-[11px] font-bold px-3 py-1 btn-pill shadow">Precision Molding</span>
-            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Dynamic Molding Pillows</span>
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center gap-2 bg-[#F1F5FF] text-[#0F256C] text-xs font-bold px-3.5 py-1 rounded-full">
+            <span>🦶</span> Category 01 — Foot Diagnostic System
           </div>
-          <div class="p-6 space-y-4">
-            <h3 class="text-lg font-bold text-[#20265B]">Custom Thermal Insole Moulding Station</h3>
-            <p class="text-[#54595F] text-sm leading-relaxed">
-              Patented rapid thermal activation pillows that soften medical memory polymers, allowing dynamic molding directly to the patient's feet in neutral standing position.
-            </p>
-            <ul class="text-xs text-[#54595F] space-y-2 pt-2 border-t border-indigo-100">
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> 100% custom fit in just 10 minutes</li>
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Independent molding for left & right arches</li>
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Medical-grade dynamic support core</li>
-            </ul>
-          </div>
-        </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#20265B]">
+            The FootBalance Scanner
+          </h2>
+          
+          <!-- Client Copy for Image 1 -->
+          <p class="text-[#54595F] text-sm sm:text-base leading-relaxed bg-[#F5F8FF] p-4 sm:p-5 rounded-2xl border-l-4 border-[#0F256C]">
+            The FootBalance Scanner is an advanced foot-scanning technology that analyses foot structure, arch type, and pressure distribution to provide 100% customised insoles. It helps identify individual foot needs, recommends suitable footwear, and supports personalised solutions for concerns such as flat feet, plantar fasciitis, and posture-related issues. Customised insoles can be prepared in approximately one hour.
+          </p>
 
-        <!-- Machine 3: Clinical Diagnostic & Podiatry Station (Drive Photo: 1bhetLrU_cLIEVbqOwXgLIswPiBo6QkqU) -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
-          <div class="h-56 relative overflow-hidden cursor-pointer" onclick="openImageModal('https://lh3.googleusercontent.com/d/1bhetLrU_cLIEVbqOwXgLIswPiBo6QkqU=w1200', 'Clinical Diagnostic Podiatry Suite & Joint Therapy')">
-            <img src="https://lh3.googleusercontent.com/d/1bhetLrU_cLIEVbqOwXgLIswPiBo6QkqU=w800" alt="Clinical Diagnostic Podiatry Suite" class="w-full h-full object-cover img-zoom" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <span class="absolute top-3 left-3 bg-[#F1F5FF] text-[#20265B] text-[11px] font-bold px-3 py-1 btn-pill shadow">Therapy & Recovery</span>
-            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Dual-Wavelength Laser & LED</span>
-          </div>
-          <div class="p-6 space-y-4">
-            <h3 class="text-lg font-bold text-[#20265B]">Kineon Move+ Laser Joint Therapy</h3>
-            <p class="text-[#54595F] text-sm leading-relaxed">
-              Dual-wavelength targeted photobiomodulation utilizing deep red LED and near-infrared laser technology to penetrate deep into joint tissue, cartilage, and ligaments.
-            </p>
-            <ul class="text-xs text-[#54595F] space-y-2 pt-2 border-t border-slate-100">
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Stimulates cellular ATP & collagen repair</li>
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Relieves chronic knee, ankle, and tendon pain</li>
-              <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Non-invasive with zero recovery time</li>
-            </ul>
+          <!-- Feature Points -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+              <span class="text-[#61CE70] text-lg font-bold">✓</span>
+              <div>
+                <h4 class="text-xs font-bold text-[#20265B]">100% Customised Insoles</h4>
+                <p class="text-[11px] text-[#54595F]">Prepared on-site in approximately one hour.</p>
+              </div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+              <span class="text-[#61CE70] text-lg font-bold">✓</span>
+              <div>
+                <h4 class="text-xs font-bold text-[#20265B]">Arch & Pressure Distribution</h4>
+                <p class="text-[11px] text-[#54595F]">Full anatomical analysis across the foot bed.</p>
+              </div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+              <span class="text-[#61CE70] text-lg font-bold">✓</span>
+              <div>
+                <h4 class="text-xs font-bold text-[#20265B]">Footwear Recommendation</h4>
+                <p class="text-[11px] text-[#54595F]">Matches ideal shoe structure to individual gait.</p>
+              </div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+              <span class="text-[#61CE70] text-lg font-bold">✓</span>
+              <div>
+                <h4 class="text-xs font-bold text-[#20265B]">Targeted Pain Relief</h4>
+                <p class="text-[11px] text-[#54595F]">Solutions for flat feet, plantar fasciitis & posture.</p>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
 
-    <!-- Video Demonstration Gallery (Machinery Video Demonstrations) -->
-    <div id="machine-gallery" class="bg-[#F5F8FF] rounded-3xl p-6 sm:p-10 border border-indigo-100 shadow-sm space-y-8">
-      <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-4 border-b border-indigo-200/60 pb-5">
-        <div>
-          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Equipment Video Demonstrations</span>
-          <h3 class="text-2xl font-bold text-[#20265B]">Equipment in Action & Video Demonstrations</h3>
-          <p class="text-[#54595F] text-sm">Watch authentic clinical walkthroughs recorded at Wellness Pro centers. Click any video to play directly.</p>
+
+    <!-- ================= CATEGORY 2: FOOTBALANCE KIOSK MODEL ================= -->
+    <div id="cat-kiosk-model" class="bg-[#F5F8FF] rounded-3xl border border-indigo-100 p-6 sm:p-10 shadow-sm space-y-8">
+      <div class="space-y-4">
+        <div class="inline-flex items-center gap-2 bg-white text-[#FE6347] text-xs font-bold px-3.5 py-1 rounded-full shadow-xs">
+          <span>🏥</span> Category 02 — Professional Setup & Franchise Opportunity
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#20265B]">
+          The FootBalance Kiosk Model
+        </h2>
+        
+        <!-- Client Copy for Images 2, 3 & 4 -->
+        <p class="text-[#54595F] text-sm sm:text-base leading-relaxed bg-white p-4 sm:p-5 rounded-2xl border-l-4 border-[#FE6347] shadow-xs">
+          The FootBalance Kiosk Model is a compact, professional foot-scanning setup designed for clinics, hospitals, sports centres, and retail outlets. It analyses foot structure and pressure distribution, recommends suitable footwear, and enables the preparation of 100% customised insoles in approximately one hour. An ideal business opportunity for healthcare professionals looking to offer advanced foot assessment and personalised foot-care solutions.
+        </p>
+      </div>
+
+      <!-- 3-Image Gallery (Images 2, 3 & 4) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+        
+        <!-- Image 2 -->
+        <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-kiosk-display.jpg', 'FootBalance Kiosk — Insole Retail Display & Anatomical Arch Models (Image 2)')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-64 relative overflow-hidden bg-slate-900">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-kiosk-display.jpg" alt="FootBalance Kiosk Insole Display" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[11px] font-bold px-3 py-0.5 btn-pill shadow">Image 2</span>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Insole Display & Arch Models 🔍</span>
+          </div>
+          <div class="p-4 space-y-1">
+            <h4 class="text-sm font-bold text-[#20265B]">Retail & Clinic Display</h4>
+            <p class="text-xs text-[#54595F]">Compact modular shelving for custom orthotics and arch models.</p>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-kiosk-clinic.jpg', 'FootBalance Kiosk — Clinic Consultation & Active Scanner Setup (Image 3)')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-64 relative overflow-hidden bg-slate-900">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-kiosk-clinic.jpg" alt="FootBalance Kiosk Clinic Setup" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[11px] font-bold px-3 py-0.5 btn-pill shadow">Image 3</span>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Clinical Consultation Room 🔍</span>
+          </div>
+          <div class="p-4 space-y-1">
+            <h4 class="text-sm font-bold text-[#20265B]">Active Clinical Setup</h4>
+            <p class="text-xs text-[#54595F]">Turnkey foot-assessment environment with integrated scanning.</p>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-kiosk-entrance.jpg', 'FootBalance Kiosk — Full Facility & Center Entrance View (Image 4)')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-64 relative overflow-hidden bg-slate-900">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/footbalance-kiosk-entrance.jpg" alt="FootBalance Kiosk Center Entrance" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <span class="absolute top-3 left-3 bg-[#0F256C] text-white text-[11px] font-bold px-3 py-0.5 btn-pill shadow">Image 4</span>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold">Commercial & Hospital Layout 🔍</span>
+          </div>
+          <div class="p-4 space-y-1">
+            <h4 class="text-sm font-bold text-[#20265B]">Flexible Layout Integration</h4>
+            <p class="text-xs text-[#54595F]">Fits seamlessly in clinics, hospitals, sports centres & premium retail.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ================= CATEGORIES 3 & 4: X5 & X3 FOOT SCANNERS ================= -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- CATEGORY 3: X5 FOOT SCANNER -->
+      <div id="cat-x5-scanner" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col justify-between space-y-6">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 bg-[#F1F5FF] text-[#0F256C] text-xs font-bold px-3.5 py-1 rounded-full">
+            <span>🤖</span> Category 03 — AI Biomechanical System
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">
+            The X5 Foot Scanner
+          </h3>
+
+          <!-- Client Copy for Image 5 -->
+          <p class="text-[#54595F] text-sm leading-relaxed bg-[#F5F8FF] p-4 rounded-2xl border-l-4 border-[#20265B]">
+            The X5 Foot Scanner is more than a foot scanner — it is an AI-based biomechanical assessment and customised insole system. It assesses foot structure, lower-limb alignment and overall body posture, then helps generate analysis reports and customise insoles on-site. The manufacturer states that the process takes approximately 10 minutes.
+          </p>
+
+          <!-- Feature Points -->
+          <ul class="text-xs text-[#54595F] space-y-2 pt-2">
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> AI intelligent algorithm & biomechanical line assessment</li>
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Assesses lower-limb alignment & overall body posture</li>
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Generates comprehensive analysis reports via 3 distribution channels</li>
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Rapid on-site insole customization in approximately 10 minutes</li>
+          </ul>
+        </div>
+
+        <!-- Image 5 -->
+        <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/x5-foot-scanner.jpg', 'X5 Foot Scanner — AI Intelligent Algorithm & Biomechanical Assessment System (Image 5)')" class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 relative group cursor-pointer aspect-[4/3] bg-slate-900">
+          <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/x5-foot-scanner.jpg" alt="X5 Foot Scanner Poster" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <span class="absolute top-3 left-3 bg-[#FE6347] text-white text-[11px] font-bold px-3 py-0.5 btn-pill shadow">Image 5</span>
+          <span class="absolute bottom-3 left-3 text-white text-xs font-bold">X5 Scanner System Specifications 🔍</span>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- Video 1 (Drive ID: 1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR) -->
-        <div onclick="openVideoModal('1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR', 'Thermal Molding & Dynamic Insole Forming Demo')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
-          <div class="h-56 relative overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/d/1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR=w800" alt="Thermal Molding Video" class="w-full h-full object-cover img-zoom" />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
-            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">▶ Watch Video</span>
-            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">Live Forming</span>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
-                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+      <!-- CATEGORY 4: FOOTWORK LAB X3 FOOT PRESSURE SCANNER -->
+      <div id="cat-x3-scanner" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col justify-between space-y-6">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 bg-[#F1F5FF] text-[#0F256C] text-xs font-bold px-3.5 py-1 rounded-full">
+            <span>📊</span> Category 04 — Gait & Pressure Analysis
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">
+            FOOTWORK LAB X3 Foot Pressure Scanner
+          </h3>
+
+          <!-- Client Copy for Image 6 -->
+          <p class="text-[#54595F] text-sm leading-relaxed bg-[#F5F8FF] p-4 rounded-2xl border-l-4 border-[#0F256C]">
+            The FOOTWORK LAB X3 Foot Pressure Scanner combines static foot-pressure analysis, dynamic gait assessment, and lower-limb biomechanical alignment detection. It captures foot and lower-limb images, records walking patterns, generates AI-assisted assessment reports, and supports personalised footwear recommendations and on-site customised insole production using compatible equipment.
+          </p>
+
+          <!-- Feature Points -->
+          <ul class="text-xs text-[#54595F] space-y-2 pt-2">
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Static foot-pressure matrix & high-density dynamic sensor recording</li>
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Dynamic gait assessment capturing real-time walking patterns</li>
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> Lower-limb biomechanical alignment detection</li>
+            <li class="flex items-center gap-2"><span class="text-[#61CE70] font-bold text-base">✓</span> AI-assisted clinical reports & personalized footwear matching</li>
+          </ul>
+        </div>
+
+        <!-- Diagnostic Matrix Illustration Card -->
+        <div class="bg-gradient-to-br from-[#20265B] to-[#0F256C] rounded-2xl p-6 text-white space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-[#FEB518]">Dual Matrix Capabilities</span>
+            <span class="bg-white/20 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Static + Dynamic</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-center">
+            <div class="bg-white/10 rounded-xl p-3 border border-white/10">
+              <div class="text-xl font-extrabold text-white">Static</div>
+              <div class="text-[11px] text-slate-200">Standing Arch Load</div>
+            </div>
+            <div class="bg-white/10 rounded-xl p-3 border border-white/10">
+              <div class="text-xl font-extrabold text-[#FEB518]">Dynamic</div>
+              <div class="text-[11px] text-slate-200">Walking Gait Cycle</div>
             </div>
           </div>
-          <div class="p-5 space-y-2">
-            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">Thermal Molding & Insole Forming Process</h4>
-            <p class="text-[#54595F] text-xs">Live forming demonstration showing heating pillows, foot stance, and dynamic polymer molding.</p>
+          <p class="text-xs text-slate-200 text-center">Integrated with compatible production machinery for instant insole forming.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= CATEGORY 5: KINEON MOVE+ ================= -->
+    <div id="cat-kineon-move" class="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F256C] rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-xl space-y-10 relative overflow-hidden">
+      
+      <!-- Header Zone -->
+      <div class="flex flex-col lg:flex-row justify-between lg:items-end gap-6 border-b border-slate-700/80 pb-8">
+        <div class="space-y-3 max-w-3xl">
+          <div class="inline-flex items-center gap-2 bg-white/10 text-[#FE6347] text-xs font-bold px-3.5 py-1 rounded-full border border-white/15 backdrop-blur-sm">
+            <span>⚡</span> Category 05 — Advanced Joint & Tissue Photobiomodulation
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Kineon MOVE+
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            The next generation of wearable light therapy. Combines medical-grade <span class="text-white font-bold">660nm deep red LEDs</span> and <span class="text-[#FE6347] font-bold">808nm near-infrared lasers</span> to penetrate deep into joint capsules, stimulating cellular ATP energy and calming chronic inflammation right at the source.
+          </p>
+        </div>
+
+        <!-- Quick Tech Specs Badge -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/15 flex items-center gap-4 shrink-0">
+          <div class="w-12 h-12 rounded-xl bg-[#FE6347] flex items-center justify-center font-black text-white text-xl shadow">
+            808<span class="text-[10px] block">nm</span>
+          </div>
+          <div class="text-xs">
+            <div class="font-bold text-white">Infrared Lasers + Deep LEDs</div>
+            <div class="text-slate-300">Targeted Joint Pain Relief</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-Area Targeted Applications (Real Photos) -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-bold text-white">Targeted Pain Relief Across Key Joints</h3>
+          <span class="text-xs text-slate-300">Tap any photo to enlarge 🔍</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+          
+          <!-- Knee -->
+          <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-knee.jpg', 'Kineon MOVE+ on Knee — Patellar & Joint Relief')" class="rounded-xl overflow-hidden relative group cursor-pointer border border-white/15 aspect-square bg-slate-800">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-knee.jpg" alt="Kineon Knee" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+              <span class="text-[11px] font-bold text-white">Knee Joint</span>
+              <span class="text-[9px] text-[#FE6347]">Cartilage & ACL</span>
+            </div>
+          </div>
+
+          <!-- Upper Back / Spine -->
+          <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-spine-back.jpg', 'Kineon MOVE+ on Spine & Upper Back — Muscle Tension & Alignment')" class="rounded-xl overflow-hidden relative group cursor-pointer border border-white/15 aspect-square bg-slate-800">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-spine-back.jpg" alt="Kineon Spine" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+              <span class="text-[11px] font-bold text-white">Upper Spine</span>
+              <span class="text-[9px] text-[#FE6347]">Thoracic Relief</span>
+            </div>
+          </div>
+
+          <!-- Lower Back -->
+          <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-lower-back.jpg', 'Kineon MOVE+ on Lower Back — Lumbar Decompression')" class="rounded-xl overflow-hidden relative group cursor-pointer border border-white/15 aspect-square bg-slate-800">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-lower-back.jpg" alt="Kineon Lower Back" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+              <span class="text-[11px] font-bold text-white">Lower Back</span>
+              <span class="text-[9px] text-[#FE6347]">Lumbar Support</span>
+            </div>
+          </div>
+
+          <!-- Neck -->
+          <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-neck.jpg', 'Kineon MOVE+ on Neck — Cervical Spine Tension Relief')" class="rounded-xl overflow-hidden relative group cursor-pointer border border-white/15 aspect-square bg-slate-800">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-neck.jpg" alt="Kineon Neck" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+              <span class="text-[11px] font-bold text-white">Cervical Neck</span>
+              <span class="text-[9px] text-[#FE6347]">Stiffness Relief</span>
+            </div>
+          </div>
+
+          <!-- Ankle -->
+          <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-ankle.jpg', 'Kineon MOVE+ on Ankle & Achilles Tendon')" class="rounded-xl overflow-hidden relative group cursor-pointer border border-white/15 aspect-square bg-slate-800">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-ankle.jpg" alt="Kineon Ankle" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+              <span class="text-[11px] font-bold text-white">Ankle Joint</span>
+              <span class="text-[9px] text-[#FE6347]">Achilles Tendon</span>
+            </div>
+          </div>
+
+          <!-- Wrist -->
+          <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-wrist.jpg', 'Kineon MOVE+ on Wrist & Forearm — RSI & Joint Recovery')" class="rounded-xl overflow-hidden relative group cursor-pointer border border-white/15 aspect-square bg-slate-800">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-wrist.jpg" alt="Kineon Wrist" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+              <span class="text-[11px] font-bold text-white">Wrist & Hand</span>
+              <span class="text-[9px] text-[#FE6347]">Overuse Relief</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Product Package: What's Included -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/5 rounded-2xl p-6 border border-white/10">
+        <div class="lg:col-span-5 space-y-4">
+          <h4 class="text-xl font-bold text-white">What's Included With Your MOVE+</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            A complete professional joint recovery suite designed for both clinic therapy sessions and at-home daily treatment.
+          </p>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">📦 3 Laser Modules</div>
+            <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">⚡ 1 Charging Dock</div>
+            <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">🔒 3 Module Holders</div>
+            <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">🔌 1 USB-C Cable</div>
+            <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">🔗 2 Flexible Bridges</div>
+            <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">🧳 1 Travel Hard Case</div>
           </div>
         </div>
 
-        <!-- Video 2 (Drive ID: 1e-CS6Za-FR29QUdGVPA0XLg_xmapInE8) -->
+        <div class="lg:col-span-7">
+          <div onclick="openImageModal('https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-whats-included.jpg', 'What is Included with your Kineon MOVE+ Complete Kit')" class="rounded-xl overflow-hidden border border-white/20 shadow-md cursor-pointer group bg-white">
+            <img src="https://raw.githubusercontent.com/rahulsingh2495/wellnesspro/main/images/kineon-whats-included.jpg" alt="What's Included in Kineon MOVE+" class="w-full h-auto object-contain img-zoom" style="max-height: 280px !important; margin: 0 auto;">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================= UNDER THIS: SCANNING & MACHINERY VIDEO GALLERY ================= -->
+    <div id="scanning-videos" class="bg-[#F5F8FF] rounded-3xl p-6 sm:p-10 border border-indigo-100 shadow-sm space-y-8">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-4 border-b border-indigo-200/60 pb-5">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-white text-[#FE6347] text-xs font-bold px-3.5 py-1 rounded-full shadow-xs mb-2">
+            <span>▶</span> Live Clinical Footage
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">
+            Machinery in Action & Scanning Video Demonstrations
+          </h3>
+          <p class="text-[#54595F] text-xs sm:text-sm">
+            Watch computerized 3D foot scanning, gait recording, and dynamic insole molding recorded live in Wellness Pro centers. Tap any video card to play directly in high-definition.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5 Scanning & Machine Videos Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Video 1: 3D Foot Scanner & Arch Alignment Analysis -->
         <div onclick="openVideoModal('1e-CS6Za-FR29QUdGVPA0XLg_xmapInE8', '3D Foot Scanner & Arch Alignment Analysis')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
-          <div class="h-56 relative overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/d/1e-CS6Za-FR29QUdGVPA0XLg_xmapInE8=w800" alt="3D Scanner Video" class="w-full h-full object-cover img-zoom" />
+          <div class="h-56 relative overflow-hidden bg-slate-900">
+            <img src="https://lh3.googleusercontent.com/d/1e-CS6Za-FR29QUdGVPA0XLg_xmapInE8=w800" alt="3D Scanner Video" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
             <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
             <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">▶ Watch Video</span>
-            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">Diagnostic</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">3D Scan</span>
             <div class="absolute inset-0 flex items-center justify-center">
               <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
                 <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -319,13 +569,13 @@
           </div>
         </div>
 
-        <!-- Video 3 (Drive ID: 1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf) -->
-        <div onclick="openVideoModal('1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf', 'Clinical Diagnostics & Machine Operation')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
-          <div class="h-56 relative overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/d/1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf=w800" alt="Hygiene & Ergonomics Video" class="w-full h-full object-cover img-zoom" />
+        <!-- Video 2: FootBalance Scanner Live In-Store Demo -->
+        <div onclick="openVideoModal('14WfnsoWDy1-Jx1l4cJgP31iLajn7SUi5', 'FootBalance Scanner Live In-Store Demo')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-56 relative overflow-hidden bg-slate-900">
+            <img src="https://lh3.googleusercontent.com/d/14WfnsoWDy1-Jx1l4cJgP31iLajn7SUi5=w800" alt="FootBalance Scanner Live Demo" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
             <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
             <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">▶ Watch Video</span>
-            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">Clinic Standard</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#0F256C] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">Live Demo</span>
             <div class="absolute inset-0 flex items-center justify-center">
               <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
                 <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -333,90 +583,77 @@
             </div>
           </div>
           <div class="p-5 space-y-2">
-            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">Clinical Hygiene & Ergonomic Setup</h4>
-            <p class="text-[#54595F] text-xs">Medical grade sanitization, custom tooling, and professional consultation equipment.</p>
+            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">FootBalance Scanner Live In-Store Demo</h4>
+            <p class="text-[#54595F] text-xs">Customer undergoing computerized 3D foot scanning and live pressure assessment on opening day.</p>
+          </div>
+        </div>
+
+        <!-- Video 3: First Patient 3D Scan & Doctor Consultation -->
+        <div onclick="openVideoModal('1Py7mU2X9diGDAz6ZDmT3-53w09zJ5_hx', 'First Patient 3D Scan & Doctor Consultation')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-56 relative overflow-hidden bg-slate-900">
+            <img src="https://lh3.googleusercontent.com/d/1Py7mU2X9diGDAz6ZDmT3-53w09zJ5_hx=w800" alt="Patient 3D Scan" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">▶ Watch Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#61CE70] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">Doctor Consult</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">Patient 3D Scan & Doctor Consultation</h4>
+            <p class="text-[#54595F] text-xs">Certified podiatrist demonstrating arch measurement on diagnostic scanner with real-time feedback.</p>
+          </div>
+        </div>
+
+        <!-- Video 4: Thermal Molding & Dynamic Insole Forming Demo -->
+        <div onclick="openVideoModal('1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR', 'Thermal Molding & Dynamic Insole Forming Demo')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-56 relative overflow-hidden bg-slate-900">
+            <img src="https://lh3.googleusercontent.com/d/1AHLS9FoSiKCHAkuJ8jOp_-fE9vQUgVVR=w800" alt="Thermal Molding Video" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">▶ Watch Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#FE6347] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">Live Forming</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">Thermal Molding & Insole Forming Process</h4>
+            <p class="text-[#54595F] text-xs">Live forming demonstration showing heating pillows, patient neutral stance, and dynamic polymer molding.</p>
+          </div>
+        </div>
+
+        <!-- Video 5: Clinical Diagnostics & Machine Operation -->
+        <div onclick="openVideoModal('1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf', 'Clinical Diagnostics & Machine Operation')" class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group cursor-pointer">
+          <div class="h-56 relative overflow-hidden bg-slate-900">
+            <img src="https://lh3.googleusercontent.com/d/1hHg_J1zvKx301ij0p6w4QDQOTjBmqRXf=w800" alt="Clinical Diagnostics Video" class="w-full h-full object-cover img-zoom" style="height: 100% !important; width: 100% !important; object-fit: cover !important;">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#20265B]/85 via-black/30 to-black/20 group-hover:from-[#20265B]/70 transition"></div>
+            <span class="absolute top-3.5 left-3.5 bg-black/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-0.5 btn-pill">▶ Watch Video</span>
+            <span class="absolute top-3.5 right-3.5 bg-[#0F256C] text-white text-[10px] font-bold px-3 py-0.5 btn-pill shadow">Clinic Standard</span>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-[#FE6347] text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 transition">
+                <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="text-base font-bold text-[#20265B] group-hover:text-[#FE6347] transition">Clinical Diagnostics & Machine Operation</h4>
+            <p class="text-[#54595F] text-xs">Medical-grade sanitization, precision trimming tools, and professional consultation equipment.</p>
           </div>
         </div>
 
       </div>
     </div>
 
-    <!-- Machinery & Diagnostic Equipment Gallery -->
-    <div class="space-y-6">
-      <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-2 border-b border-slate-200 pb-4">
-        <div>
-          <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Machinery & Equipment Gallery</span>
-          <h3 class="text-2xl font-bold text-[#20265B]">Clinical Equipment & Machinery Gallery</h3>
-          <p class="text-[#54595F] text-xs sm:text-sm">High-resolution authentic equipment photos from Wellness Pro clinics. Tap any photo to enlarge.</p>
-        </div>
-      </div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/1yoXlACzOTL6VjC5_6zjjCPRBwXbqmdNi=w1200', 'Dynamic Thermal Molding Pillows in Neutral Standing Position')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/1yoXlACzOTL6VjC5_6zjjCPRBwXbqmdNi=w600" alt="Dynamic Molding Pillows" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Dynamic Molding Pillows 🔍</span>
-          </div>
-        </div>
-
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/1qgj0DS4PZBABSW5bkUzDwx0VPqQuJpRA=w1200', 'Patient Stance & Arch Alignment on 3D Sensor Plate')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/1qgj0DS4PZBABSW5bkUzDwx0VPqQuJpRA=w600" alt="Patient Foot Stance" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Patient Stance Analysis 🔍</span>
-          </div>
-        </div>
-
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/12UykRC7oy4s5RH9q8418wrsvdvfHCAoI=w1200', 'Rapid Thermal Insole Heating Station & Core Activation')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/12UykRC7oy4s5RH9q8418wrsvdvfHCAoI=w600" alt="Thermal Heating Station" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Thermal Heating Station 🔍</span>
-          </div>
-        </div>
-
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/1g1jVWa-gdPsKkVKfABpero_e4TE56rR2=w1200', 'Real-Time Arch Depth & Dynamic Pressure Map Display')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/1g1jVWa-gdPsKkVKfABpero_e4TE56rR2=w600" alt="Dynamic Pressure Screen" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Real-Time Pressure Map 🔍</span>
-          </div>
-        </div>
-
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/1QqAybIEcQc8Juu2vTB4cMGl4dQ7aPrI1=w1200', 'Orthotic Insole Trimming & Finishing Station')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/1QqAybIEcQc8Juu2vTB4cMGl4dQ7aPrI1=w600" alt="Trimming Station" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Precision Insole Finishing 🔍</span>
-          </div>
-        </div>
-
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/1uip9t5gtllC5WiLl66m_GDmITxTo31rK=w1200', 'Clinical Diagnostic & Podiatry Fitting Tools')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/1uip9t5gtllC5WiLl66m_GDmITxTo31rK=w600" alt="Podiatry Tools" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Clinical Fitting Tools 🔍</span>
-          </div>
-        </div>
-
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/1AWABYw_NlbyAsX57QLoZUQIGs9A9vzWe=w1200', 'Thermal Heating & Medical Polymer Softening Unit')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/1AWABYw_NlbyAsX57QLoZUQIGs9A9vzWe=w600" alt="Polymer Softening Unit" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Polymer Softening Unit 🔍</span>
-          </div>
-        </div>
-
-        <div onclick="openImageModal('https://lh3.googleusercontent.com/d/1JFuzMqHE_QJUDyh0YEDC-6jmMMdux3m4=w1200', 'Custom Shoe Fitting & Dynamic Stance Testing')" class="rounded-2xl overflow-hidden relative group cursor-pointer border border-slate-200 shadow-sm aspect-[4/3] bg-slate-100">
-          <img src="https://lh3.googleusercontent.com/d/1JFuzMqHE_QJUDyh0YEDC-6jmMMdux3m4=w600" alt="Shoe Fitting" class="w-full h-full object-cover img-zoom" loading="lazy" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-3 flex items-end">
-            <span class="text-white text-xs font-bold">Custom Shoe Matching 🔍</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- 4-Step Patient Journey -->
+    <!-- ================= 4-Step Patient Journey ================= -->
     <div class="bg-[#F1F5FF] rounded-3xl p-8 lg:p-12 border border-indigo-100 shadow-sm space-y-8">
       <div class="text-center max-w-xl mx-auto space-y-2">
         <span class="text-xs font-bold text-[#FE6347] uppercase tracking-widest">Fast, Scientific, Non-Invasive</span>
-        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">How the 10-Minute Custom Process Works</h3>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#20265B]">How the Custom Footwear & Insole Journey Works</h3>
         <p class="text-[#54595F] text-sm">No weeks of waiting for orthotics. Walk in and walk out with custom comfort.</p>
       </div>
 
@@ -424,12 +661,12 @@
         <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
           <div class="text-3xl font-black text-[#FE6347]">01</div>
           <h4 class="font-bold text-[#20265B] text-base">3D Computerized Scan</h4>
-          <p class="text-xs text-[#54595F] leading-relaxed">You stand on our specialized pressure plates to capture digital contours and biomechanical arch height.</p>
+          <p class="text-xs text-[#54595F] leading-relaxed">Stand on our high-resolution pressure plates to capture digital contours and biomechanical arch height.</p>
         </div>
         <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
           <div class="text-3xl font-black text-[#FE6347]">02</div>
           <h4 class="font-bold text-[#20265B] text-base">Gait & Stance Analysis</h4>
-          <p class="text-xs text-[#54595F] leading-relaxed">Our certified specialist reviews your ankle tilt, knee alignment, and foot pressure distribution.</p>
+          <p class="text-xs text-[#54595F] leading-relaxed">Our certified specialist reviews ankle tilt, knee alignment, and foot pressure distribution.</p>
         </div>
         <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
           <div class="text-3xl font-black text-[#FE6347]">03</div>
@@ -444,7 +681,8 @@
       </div>
     </div>
 
-    <!-- CTA Bar (Responsive) -->
+
+    <!-- ================= CTA Bar ================= -->
     <div id="book-scan" class="bg-gradient-to-r from-[#20265B] to-[#0F256C] rounded-3xl p-6 sm:p-8 lg:p-12 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="space-y-1 text-center md:text-left">
         <h3 class="text-xl sm:text-2xl font-bold text-white">Experience our technology in person</h3>
@@ -454,7 +692,7 @@
         <a href="tel:9820647062" class="bg-white text-[#0F256C] font-bold text-sm px-6 py-3.5 btn-pill hover:bg-slate-50 transition text-center">
           Call +91 982 064 7062
         </a>
-        <a href="patient-stories.html#consultation" class="bg-[#FE6347] hover:bg-[#e0533a] text-white font-bold text-sm px-7 py-3.5 btn-pill shadow transition text-center">
+        <a href="https://wa.me/919820647062?text=Hello%20Wellness%20Pro,%20I%20would%20like%20to%20book%20a%203D%20Foot%20Scan%20appointment." target="_blank" class="bg-[#FE6347] hover:bg-[#e0533a] text-white font-bold text-sm px-7 py-3.5 btn-pill shadow transition text-center">
           Book Appointment
         </a>
       </div>
@@ -462,26 +700,45 @@
 
   </main>
 
-  <!-- ================= VIDEO PLAYER MODAL ================= -->
-  <div id="videoModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) closeVideoModal()">
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#20265B] text-white text-xs py-8 border-t border-slate-800">
+    <div class="w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+      <div>
+        <p class="font-bold text-sm">Wellness Pro Clinics & Partner Centers</p>
+        <p class="text-slate-400 mt-0.5">Ahmedabad • Gwalior • Jabalpur • Mumbai • Pan-India</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 font-semibold text-slate-300">
+        <a href="technology.html" class="hover:text-white transition">Our Technology</a>
+        <a href="openings.html" class="hover:text-white transition">Center Openings</a>
+        <a href="patient-stories.html" class="hover:text-white transition">Patient Stories</a>
+        <a href="all-opening-videos.html" class="hover:text-white transition">All Opening Reels</a>
+        <a href="all-patient-videos.html" class="hover:text-white transition">All Patient Videos</a>
+      </div>
+      <p class="text-slate-500 text-[11px]">© 2026 Wellness Pro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= 5. VIDEO MODAL ================= -->
+  <div id="videoModal" class="fixed inset-0 z-[999999] hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) closeVideoModal()">
     <div class="relative bg-black rounded-2xl overflow-hidden max-w-4xl w-full aspect-video shadow-2xl border border-white/20">
       <div class="absolute top-0 inset-x-0 bg-gradient-to-b from-black/80 to-transparent p-3 sm:p-4 flex items-center justify-between z-10 pointer-events-none">
         <h3 id="videoModalTitle" class="text-white text-xs sm:text-sm font-bold truncate max-w-[80%] drop-shadow"></h3>
-        <button onclick="closeVideoModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#FE6347] text-white flex items-center justify-center transition pointer-events-auto">✕</button>
+        <button onclick="closeVideoModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#FE6347] text-white flex items-center justify-center transition pointer-events-auto cursor-pointer border-0">✕</button>
       </div>
       <iframe id="videoIframe" class="w-full h-full pt-8 sm:pt-10" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
 
-  <!-- ================= IMAGE LIGHTBOX MODAL ================= -->
-  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeImageModal()">
+  <!-- ================= 6. IMAGE LIGHTBOX MODAL ================= -->
+  <div id="imageModal" class="fixed inset-0 z-[999999] hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeImageModal()">
     <div class="relative max-w-5xl max-h-[92vh] flex flex-col items-center">
-      <button onclick="closeImageModal()" class="self-end text-white hover:text-[#FE6347] text-xl font-bold mb-2 transition">✕ Close</button>
+      <button onclick="closeImageModal()" class="self-end text-white hover:text-[#FE6347] text-xl font-bold mb-2 transition cursor-pointer bg-transparent border-0">✕ Close</button>
       <img id="lightboxImg" src="" class="max-w-full max-h-[80vh] rounded-xl object-contain shadow-2xl border border-white/20" />
       <p id="lightboxCaption" class="text-white text-xs sm:text-sm mt-3 font-semibold text-center drop-shadow px-4"></p>
     </div>
   </div>
 
+  <!-- ================= 7. Scoped Controller Scripts ================= -->
   <script>
     function toggleMobileMenu() {
       const drawer = document.getElementById('mobile-menu-drawer');
