@@ -3,53 +3,64 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 3000;
-const DIR = __dirname;
-
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
-  '.css': 'text/css',
-  '.js': 'application/javascript',
-  '.json': 'application/json',
-  '.png': 'image/png',
+  '.css': 'text/css; charset=UTF-8',
+  '.js': 'application/javascript; charset=UTF-8',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
+  '.png': 'image/png',
+  '.webp': 'image/webp',
   '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon'
+  '.json': 'application/json; charset=UTF-8',
+  '.woff': 'font/woff',
+  '.woff2': 'font/woff2',
+  '.ttf': 'font/ttf'
 };
 
 const server = http.createServer((req, res) => {
-  let reqPath = decodeURI(req.url.split('?')[0]);
-  if (reqPath === '/' || reqPath === '') reqPath = '/index.html';
+  // Add CORS headers for convenient previewing
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
 
-  let filePath = path.join(DIR, reqPath);
-
-  if (!fs.existsSync(filePath)) {
-    res.writeHead(404, { 'Content-Type': 'text/plain' });
-    res.end('404 Not Found');
+  if (req.method === 'OPTIONS') {
+    res.writeHead(204);
+    res.end();
     return;
   }
 
-  if (fs.statSync(filePath).isDirectory()) {
-    filePath = path.join(filePath, 'index.html');
-  }
+  let reqPath = decodeURI(req.url.split('?')[0]);
+  if (reqPath === '/' || reqPath === '') reqPath = '/technology.html';
 
-  const ext = path.extname(filePath).toLowerCase();
-  const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+  let filePath = path.join(__dirname, reqPath);
 
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
-      res.writeHead(500, { 'Content-Type': 'text/plain' });
-      res.end('Server Error');
-      return;
+  fs.stat(filePath, (err, stats) => {
+    if (err || !stats.isFile()) {
+      // If no extension, try appending .html
+      if (!path.extname(filePath)) {
+        const htmlPath = filePath + '.html';
+        if (fs.existsSync(htmlPath)) {
+          filePath = htmlPath;
+        } else {
+          res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
+          res.end('404 Not Found');
+          return;
+        }
+      } else {
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
+        res.end('404 Not Found');
+        return;
+      }
     }
-    res.writeHead(200, { 
-      'Content-Type': contentType,
-      'Access-Control-Allow-Origin': '*'
-    });
-    res.end(data);
+
+    const ext = path.extname(filePath).toLowerCase();
+    const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+    res.writeHead(200, { 'Content-Type': contentType });
+    fs.createReadStream(filePath).pipe(res);
   });
 });
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Wellness Pro server listening on http://0.0.0.0:${PORT}`);
+server.listen(PORT, '127.0.0.1', () => {
+  console.log(`Server running at http://localhost:${PORT}/`);
+  console.log(`Preview Technology page at: http://localhost:${PORT}/technology.html`);
 });
